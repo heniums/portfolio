@@ -1,37 +1,33 @@
 # src/utils — Shared Utilities
 
 ## OVERVIEW
-Two concerns: CSS merging (`css.ts`) and FP-style HOC component transformers (`component.tsx` + `fp/component.tsx`).
+Two concerns: CSS class merging (`css.ts`) and the `speardProps` helper (`component.tsx`).
+No test files exist here.
 
 ## FILES
 | File | Role |
 |------|------|
-| `css.ts` | Re-exports `clsx` wrapping `clsx` + `twMerge` — **the only clsx entry point** |
-| `component.tsx` | HOC factories: `withDefaultClass`, `withVariantClasses`, `speardProps` |
-| `fp/component.tsx` | Curried (right-curried) versions of above for `lodash.flow` composition |
+| `css.ts` | Re-exports `clsx` wrapping `clsx` lib + `twMerge` — **the only clsx entry point** |
+| `component.tsx` | `speardProps` — preserves React `key` when mapping arrays to components |
 
-## HOC SPLIT — WHY TWO FILES
-- `src/utils/component.tsx`: Direct call style — `withDefaultClass(Component, "classes")`
-- `src/utils/fp/component.tsx`: Curried (point-free) style — `withDefaultClass("classes")(Component)` — used with `flow()`
+## API REFERENCE
 
-Use `src/utils/fp/component` when composing with `flow`. Use `src/utils/component` for one-off wrapping (e.g., `Icon.tsx`, `PortfolioCard.tsx`).
-
-## API
 ```ts
-// css.ts
-clsx(...args)  // clsx + twMerge combined
+// ── css.ts ────────────────────────────────────────────────────────────────
+import { clsx } from "src/utils/css";
+clsx(...args)
+// Equivalent to twMerge(libClsx(...args))
+// Handles conditional classes, arrays, objects AND Tailwind class deduplication
 
-// component.tsx (direct)
-withDefaultClass(Component, "base classes")
-withVariantClasses(Component, { variant: "classes" })
-speardProps(Component)  // preserves React key in array.map()
+// ── component.tsx ─────────────────────────────────────────────────────────
+import { speardProps } from "src/utils/component";
 
-// fp/component.tsx (curried for flow)
-withDefaultClass("base classes")         // returns (Component) => HOC
-withVariantClasses({ variant: "..." })   // returns (Component) => HOC
+speardProps(Component)
+// Returns (props) => <Component {...props} />
+// Use in array.map() to preserve React `key` correctly:
+//   items.map(speardProps(MyComponent))  // items must have a `key` field
 ```
 
 ## ANTI-PATTERNS
 - **Never** import `clsx` or `twMerge` directly — always use `src/utils/css#clsx`
-- **Never** use `fp/component` without `flow` — use direct `component.tsx` instead
-- **Never** forget `speardProps` when mapping an array of components that need `key`
+- **Never** forget `speardProps` (or an explicit `key` prop) when mapping an array to components
