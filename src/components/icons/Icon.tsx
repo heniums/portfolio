@@ -1,15 +1,10 @@
 import { ComponentType, SVGAttributes } from "react";
-import { withDefaultClass } from "src/utils/component";
+import { clsx } from "src/utils/css";
 
 type IconProps = SVGAttributes<SVGElement> & {
   icon: ComponentType<SVGAttributes<SVGElement>>;
 };
 
-function IconComponent(props: IconProps) {
-  const { icon: PassedIcon, ...rest } = props;
-  return <PassedIcon {...rest} />;
+export default function Icon({ icon: PassedIcon, className, ...rest }: IconProps) {
+  return <PassedIcon className={clsx("w-6 h-6", className)} {...rest} />;
 }
-
-const Icon = withDefaultClass(IconComponent, "w-6 h-6");
-
-export default Icon;
