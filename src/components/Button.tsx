@@ -1,6 +1,4 @@
-import { flow } from "lodash";
 import { ButtonHTMLAttributes } from "react";
-import { withDefaultClass, withVariantClasses } from "src/utils/fp/component";
 import { clsx } from "src/utils/css";
 
 export type ButtonVariant =
@@ -16,31 +14,23 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant;
 };
 
+const BASE = "rounded-sm p-1 px-2 flex justify-center items-center gap-1";
+
 const variantClasses: Partial<Record<ButtonVariant, string>> = {
   primary: "bg-zinc-900 text-white",
   secondary: "bg-zinc-100 text-zinc-900",
   outline: "border border-zinc-900 text-zinc-900",
 };
 
-function ButtonComponent(props: ButtonProps) {
-  const { children, className, variant = "primary", ...rest } = props;
-
-  const chosenVariantClass = variantClasses[variant];
-
-  const classes = clsx(chosenVariantClass, className);
-
+export default function Button({
+  children,
+  className,
+  variant = "primary",
+  ...rest
+}: ButtonProps) {
   return (
-    <button className={classes} {...rest}>
+    <button className={clsx(BASE, variantClasses[variant], className)} {...rest}>
       {children}
     </button>
   );
 }
-
-const transform = flow(
-  withDefaultClass("rounded-sm p-1 px-2 flex justify-center items-center gap-1"),
-  withVariantClasses(variantClasses),
-);
-
-const Button = transform(ButtonComponent) as typeof ButtonComponent;
-
-export default Button;
