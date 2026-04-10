@@ -1,14 +1,7 @@
+import type { ProjectInfo } from "src/types";
+import { siteConfig } from "src/config";
 import Section from "src/components/Section";
 import PortfolioCard from "./PortfolioCard";
-
-export type ProjectInfo = {
-  key?: string;
-  name: string;
-  description?: string;
-  tags?: string[];
-  url?: string;
-  thumbnail?: string;
-};
 
 type PortfolioProps = {
   projectInfoList?: ProjectInfo[];
@@ -16,12 +9,17 @@ type PortfolioProps = {
 
 function Portfolio(props: PortfolioProps) {
   const { projectInfoList = [] } = props;
+  const { title, subTitle } = siteConfig.sections.portfolio;
 
   return (
-    <Section className="bg-zinc-50 px-0 text-zinc-900" title="PORTFOLIO">
-      <div className="w-full h-full flex justify-start items-center gap-2 overflow-x-scroll scrollbar-hide snap-x snap-mandatory">
+    <Section
+      className="bg-zinc-50 text-zinc-900"
+      title={title}
+      subTitle={subTitle}
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl">
         {projectInfoList.map((info) => (
-          <PortfolioCard {...info} className="translate-x-8 last:mr-16 snap-center snap-always" />
+          <PortfolioCard key={info.key} {...info} />
         ))}
       </div>
     </Section>

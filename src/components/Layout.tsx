@@ -1,7 +1,6 @@
 import { Outlet } from "react-router";
-import pick from "lodash/pick";
 
-import { TopbarMenuLinkConfig } from "src/types";
+import type { TopbarMenuLinkConfig } from "src/types";
 import { TopBar } from "src/components/TopBar";
 import Footer from "src/components/Footer";
 
@@ -10,9 +9,11 @@ type LayoutProps = {
 };
 
 function Layout(props: LayoutProps) {
+  const { links } = props;
+
   return (
     <div>
-      <TopBar {...pick(props, "links")} />
+      <TopBar links={links} />
       <Outlet />
       <Footer />
     </div>
