@@ -1,9 +1,10 @@
 import type { ExperienceEntry } from "src/types";
+import { ExternalLink } from "lucide-react";
 
 type ExperienceCardProps = ExperienceEntry;
 
 function ExperienceCard(props: ExperienceCardProps) {
-  const { company, role, period, description } = props;
+  const { company, companyUrl, role, period, description } = props;
 
   return (
     <div className="relative pl-8 pb-12 last:pb-0 border-l border-zinc-700">
@@ -11,7 +12,20 @@ function ExperienceCard(props: ExperienceCardProps) {
       <div className="mb-2">
         <h3 className="text-lg font-bold text-white">{role}</h3>
         <p className="text-sm text-zinc-400">
-          {company} &middot; {period}
+          {companyUrl ? (
+            <a
+              href={companyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-0.5 text-zinc-300 underline underline-offset-2 decoration-zinc-600 hover:text-white hover:decoration-white transition-colors"
+            >
+              {company}
+              <ExternalLink className="w-3 h-3 shrink-0" />
+            </a>
+          ) : (
+            company
+          )}
+          &nbsp;&middot;&nbsp;{period}
         </p>
       </div>
       <ul className="space-y-2 text-sm text-zinc-300 text-left">

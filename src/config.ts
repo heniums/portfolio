@@ -26,7 +26,7 @@ export const siteConfig: SiteConfig = {
     greeting: "Hello, I'm",
     fullName: "Nguyen Van Hen",
     jobTitle: "Full-Stack Developer",
-    bio: "I build modern web applications and marketplace platforms. Passionate about clean code, scalable architecture, and delivering impactful digital experiences.",
+    bio: "I build marketplace platforms and full-stack web applications. My edge is in React and Node.js — I'm the one writing the features, wiring up the payments, and figuring out why the Handlebars template isn't rendering. Cloud and DevOps? I'm comfortable there, but I'm not the one writing the Dockerfile from scratch.",
     ctaPrimaryLabel: "Get in Touch",
     ctaSecondaryLabel: "GitHub",
   },
@@ -59,7 +59,7 @@ export const siteConfig: SiteConfig = {
   seo: {
     title: "Nguyen Van Hen — Full-Stack Developer",
     description:
-      "Full-stack developer specializing in React, TypeScript, Node.js, and cloud infrastructure. Building modern web applications and marketplace platforms.",
+      "Full-stack developer specializing in React, TypeScript, Node.js, and Sharetribe marketplace platforms. Building real-world web applications with integrated payments and modern tooling.",
   },
 };
 
@@ -78,7 +78,7 @@ export const aboutMeInfoBlocks: InfoBlock[] = [
     key: "skills",
     title: "Skills",
     content:
-      "Full-stack web development with React, Node.js, and TypeScript. Cloud infrastructure with AWS, Docker, and CI/CD pipelines.",
+      "Full-stack web development with React, Node.js, and TypeScript is where I live. I integrate payment gateways (Stripe, Airwallex, Wise), build email flows, and work deeply with Sharetribe marketplaces. Comfortable with AWS, Docker, Nginx, and CI/CD — I deploy confidently but I'm not the infra architect.",
   },
   {
     key: "personality",
@@ -90,16 +90,29 @@ export const aboutMeInfoBlocks: InfoBlock[] = [
 
 export const experienceEntries: ExperienceEntry[] = [
   {
+    key: "itd-group",
+    company: "ITD Group",
+    companyUrl: "https://itd.com.vn",
+    role: "Frontend Developer Intern",
+    period: "Oct 2023 — Dec 2023",
+    description: [
+      "Worked with graph-based data visualization for a highway camera tracking system using Blazor and ASP.NET.",
+      "Contributed to the frontend of an admin dashboard built with Blazor, including the login screen.",
+      "Built a WPF desktop application to manage dynamic highway sign content — enabling operators to push new text and position updates to roadside display boards.",
+    ],
+  },
+  {
     key: "journey-horizon",
     company: "Journey Horizon",
+    companyUrl: "https://journeyhorizon.com",
     role: "Associate Software Engineer",
     period: "Mar 2024 — Present",
     description: [
       "Built and maintained 10+ Sharetribe-based marketplace platforms for international clients across AU, US, and EU regions.",
       "Integrated payment gateways including Stripe, Airwallex, and Wise for multi-currency transaction processing.",
-      "Led production deployments, server migrations, and zero-downtime releases using AWS, Docker, and CI/CD pipelines.",
+      "Handled production deployments and server migrations using AWS, Docker, Nginx, and CI/CD pipelines — following established infrastructure guides.",
       "Executed complex data migrations and platform upgrades across multiple marketplace environments.",
-      "Delivered full-stack features spanning React frontends, Node.js backends, and cloud infrastructure.",
+      "Delivered full-stack features across React frontends, Node.js backends, and marketplace-specific flows (transactions, state machines, emails, internationalization).",
     ],
   },
 ];
@@ -141,32 +154,32 @@ export const techCategories: TechCategoryData[] = [
   {
     key: "frontend",
     title: "Frontend",
-    items: ["React", "TypeScript", "HTML", "CSS", "Tailwind CSS"],
+    note: "Day-to-day — this is where most of my work lives.",
+    items: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
   },
   {
     key: "backend",
     title: "Backend",
-    items: ["Node.js", "Express"],
+    note: "APIs, business logic, and server-side features.",
+    items: ["Node.js", "Express", "REST APIs"],
+  },
+  {
+    key: "platforms",
+    title: "Marketplace",
+    note: "Deep domain expertise — I know the internals well.",
+    items: ["Sharetribe", "Handlebars", "Transaction State Machines", "i18n"],
+  },
+  {
+    key: "payments",
+    title: "Payments & Email",
+    note: "Integrated across multiple production platforms.",
+    items: ["Stripe", "Airwallex", "Wise", "SendGrid", "Stripo"],
   },
   {
     key: "cloud-devops",
     title: "Cloud & DevOps",
-    items: ["AWS (EC2, S3, CloudFront)", "Docker", "Nginx", "CI/CD", "GitHub Actions"],
-  },
-  {
-    key: "payments",
-    title: "Payments",
-    items: ["Stripe", "Airwallex", "Wise"],
-  },
-  {
-    key: "email-marketing",
-    title: "Email & Marketing",
-    items: ["SendGrid", "Stripo"],
-  },
-  {
-    key: "platforms",
-    title: "Platforms",
-    items: ["Sharetribe"],
+    note: "Comfortable deploying and operating — not the infra architect.",
+    items: ["AWS (EC2, S3, CloudFront, DynamoDB)", "Docker", "Nginx", "CircleCI", "GitHub Actions"],
   },
 ];
 

@@ -21,6 +21,7 @@ export type ProjectInfo = {
 export type ExperienceEntry = {
   key: string;
   company: string;
+  companyUrl?: string;
   role: string;
   period: string;
   description: string[];
@@ -30,6 +31,7 @@ export type TechCategoryData = {
   key: string;
   title: string;
   items: string[];
+  note?: string;
 };
 
 export type ContactLink = {
