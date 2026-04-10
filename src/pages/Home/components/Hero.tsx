@@ -34,7 +34,7 @@ function Hero() {
             className="border-zinc-600 text-zinc-300 px-5 py-2.5 hover:border-white hover:text-white transition-colors duration-200"
           >
             <span>{hero.ctaSecondaryLabel}</span>
-            <Github className="w-4 h-4" />
+            <Github className="w-4 h-4 border-white" />
           </A>
         </div>
       </div>
