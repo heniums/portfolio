@@ -9,11 +9,17 @@ Versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+---
+
+## [1.0.0] — 2026-04-10
+
 ### Added
 
 - **Experience section** — timeline of work history rendered from `experienceEntries` in `src/config.ts`
 - **Tech Stack section** — categorized badge grid rendered from `techCategories` in `src/config.ts`, each category supports an optional `note` field for recruiter context
+- **Contact section** — links rendered from `contactLinks` in `src/config.ts`
 - **ITD Group experience entry** — Frontend Developer Intern role (Oct 2023 – Dec 2023) with company link
+- **MIT License** — `LICENSE` file added
 - `companyUrl` optional field on `ExperienceEntry` type — company name renders as an external link with inline icon when provided
 - `note` optional field on `TechCategoryData` type — small italic description rendered below each category title
 
@@ -25,6 +31,7 @@ Versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - **Tech stack categories** — reordered (Frontend → Backend → Marketplace → Payments & Email → Cloud & DevOps) and enriched: Sharetribe items expanded (Handlebars, Transaction State Machines, i18n), Payments & Email merged into one category, DynamoDB and CircleCI added
 - **Footer** — removed social icon links; contact section already covers this
 - **SEO description** — updated to mention Sharetribe and integrated payments instead of generic "cloud infrastructure"
+- **README** — rewritten with a personal tone (built for myself, free to use)
 
 ### Fixed
 
@@ -55,6 +62,7 @@ Versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - GitHub and LinkedIn icon components
 - `src/config.ts` as single source of truth for all editable content
 
-[Unreleased]: https://github.com/heniums/portfolio/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/heniums/portfolio/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/heniums/portfolio/compare/v0.2.0...v1.0.0
 [0.2.0]: https://github.com/heniums/portfolio/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/heniums/portfolio/releases/tag/v0.1.0

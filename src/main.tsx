@@ -14,8 +14,16 @@ const links: TopbarMenuLinkConfig[] = [
     link: "#about",
   },
   {
+    label: "Experience",
+    link: "#experience",
+  },
+  {
     label: "Projects",
     link: "#projects",
+  },
+  {
+    label: "Tech",
+    link: "#tech",
   },
   {
     label: "Contact",

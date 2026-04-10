@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "MrDafoe";
   src: url("./public/fonts/MrDafoe-Regular.ttf") format("truetype");

@@ -1,10 +1,8 @@
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
-
-
 import { DialogHTMLAttributes, useState } from "react";
 
 import type { TopbarMenuLinkConfig } from "src/types";
+import { siteConfig } from "src/config";
 import { clsx } from "src/utils/css";
 
 type TopBarProps = {
@@ -18,13 +16,16 @@ type TopbarMenuLinkProps = {
 
 export function TopbarMenuLink(props: TopbarMenuLinkProps) {
   const { linkConfig, toggleMenu } = props;
-
   const { label, link } = linkConfig;
 
   return (
-    <Link to={link} className="text-zinc-50 hover:underline transition-colors duration-200" onClick={() => toggleMenu(false)}>
+    <a
+      href={link}
+      className="text-zinc-400 hover:text-white transition-colors duration-200 text-sm uppercase tracking-wider"
+      onClick={() => toggleMenu(false)}
+    >
       {label}
-    </Link>
+    </a>
   );
 }
 
@@ -39,12 +40,17 @@ export function Modal(props: ModalProps) {
   return (
     <dialog
       {...rest}
-      className={clsx(className, "inset-0 w-screen h-screen bg-zinc-50 p-6 transition-transform duration-300 transform scale-100 text-black")}
+      className={clsx(
+        className,
+        "inset-0 w-screen h-screen bg-zinc-950 p-6 transition-transform duration-300 transform scale-100 text-white",
+      )}
     >
-      <div className="flex justify-between">
-        {!!title && <span className="text-3xl font-bold text-black">{title}</span>}
-        <button className="cursor-pointer" onClick={onModalClose}>
-          <X size={32} />
+      <div className="flex justify-between items-center">
+        {!!title && (
+          <span className="text-2xl font-bold text-white">{title}</span>
+        )}
+        <button className="cursor-pointer text-zinc-400 hover:text-white transition-colors" onClick={onModalClose}>
+          <X size={28} />
         </button>
       </div>
       <div>{children}</div>
@@ -54,7 +60,6 @@ export function Modal(props: ModalProps) {
 
 export function TopBar(props: TopBarProps) {
   const { links = [] } = props;
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   function toggleMenu(open?: boolean) {
@@ -66,44 +71,49 @@ export function TopBar(props: TopBarProps) {
   }
 
   return (
-    <header className="px-8 py-4 flex flex-row justify-between items-center bg-zinc-50 min-h-8">
-      <a href="#" className="text-zinc-900 text-xl font-bold font-mr-dafoe">
-        Vh
+    <header className="px-8 py-5 flex flex-row justify-between items-center bg-zinc-950 border-b border-zinc-800 sticky top-0 z-50">
+      <a href="#" className="text-white text-xl font-bold font-mr-dafoe">
+        {siteConfig.logoText}
       </a>
-      <nav className="relative">
-        <button className="text-zinc-900" onClick={() => toggleMenu()}>
-          <Menu />
-        </button>
-        <div
-          className={clsx(
-            "absolute bg-zinc-900 top-11 right-0 p-4 transition-opacity hidden md:block",
-            {
-              "opacity-0": !menuOpen,
-              "opacity-100": menuOpen,
-            },
-          )}
-        >
-          <ul>
-            {links.map((link) => (
-              <li key={link.link}>
-                <TopbarMenuLink linkConfig={link} toggleMenu={toggleMenu} />
-              </li>
-            ))}
-          </ul>
-        </div>
+
+      {/* Desktop nav */}
+      <nav className="hidden md:flex gap-8">
+        {links.map((link) => (
+          <a
+            key={link.link}
+            href={link.link}
+            className="text-zinc-400 hover:text-white transition-colors duration-200 text-sm uppercase tracking-wider"
+          >
+            {link.label}
+          </a>
+        ))}
       </nav>
+
+      {/* Mobile hamburger */}
+      <button
+        className="md:hidden text-zinc-400 hover:text-white transition-colors"
+        onClick={() => toggleMenu()}
+      >
+        <Menu size={24} />
+      </button>
 
       <Modal
         open={menuOpen}
-        title="Navigate"
+        title="Menu"
         onModalClose={() => toggleMenu(false)}
         className="md:hidden"
       >
         <nav className="pt-8">
-          <ul>
+          <ul className="space-y-4">
             {links.map(({ label, link }) => (
-              <li key={link} className="border-b text-xl pt-2 text-black hover:text-gray-700 transition-colors duration-200">
-                <Link to={link} onClick={() => setMenuOpen(false)}>{label}</Link>
+              <li key={link}>
+                <a
+                  href={link}
+                  className="block text-lg text-zinc-300 hover:text-white transition-colors duration-200 py-2 border-b border-zinc-800"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {label}
+                </a>
               </li>
             ))}
           </ul>
