@@ -1,44 +1,49 @@
-import { HtmlHTMLAttributes } from "react";
-import { useEffect } from "react";
-
-import Button from "src/components/Button";
+import A from "src/components/A";
 import Github from "src/components/icons/Github";
 import heroImage from "src/assets/me.jpg";
+import { siteConfig } from "src/config";
 
-function Hero(props: HtmlHTMLAttributes<HTMLDivElement>) {
-  useEffect(() => {
-    // Add any animations or effects here if needed
-  }, []);
-  const { ...rest } = props;
+function Hero() {
+  const { hero, social } = siteConfig;
 
   return (
-    <section
-      {...rest}
-      className="flex flex-col text-center gap-6 justify-start items-center bg-zinc-50 text-black px-8 py-6 min-h-[64vh]"
-    >
-      <div className="w-32 h-32 md:w-36 md:h-36 lg:w-80 lg:h-80 rounded-full overflow-hidden border border-zinc-900">
-        <img src={heroImage} alt="Portrait of HEN" className="object-cover w-full h-full border border-black" />
+    <section className="flex flex-col lg:flex-row items-center justify-center gap-12 bg-zinc-950 text-white px-8 py-20 min-h-[80vh]">
+      <div className="flex flex-col gap-6 max-w-xl text-center lg:text-left">
+        <p className="text-sm uppercase tracking-widest text-zinc-400">
+          {hero.greeting}
+        </p>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          {hero.fullName}
+        </h1>
+        <p className="text-lg md:text-xl text-zinc-300 font-light">
+          {hero.jobTitle}
+        </p>
+        <p className="text-sm text-zinc-400 leading-relaxed">{hero.bio}</p>
+        <div className="flex gap-3 justify-center lg:justify-start">
+          <A
+            href={`mailto:${social.email}`}
+            className="bg-white text-zinc-900 px-5 py-2.5 font-medium hover:bg-zinc-200 transition-colors duration-200"
+          >
+            {hero.ctaPrimaryLabel}
+          </A>
+          <A
+            href={social.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outline"
+            className="border-zinc-600 text-zinc-300 px-5 py-2.5 hover:border-white hover:text-white transition-colors duration-200"
+          >
+            <span>{hero.ctaSecondaryLabel}</span>
+            <Github className="w-4 h-4" />
+          </A>
+        </div>
       </div>
-      <p className="text-xl font-semibold">
-        Hello I'm <b>HEN</b>
-      </p>
-      <p>
-        <b>Web Developer</b>
-      </p>
-      <blockquote className="font-poppins-thin text-base italic text-gray-600">
-        <i>
-          “Over the last 2 years, I have experienced with various interesting
-          and complex system”
-        </i>
-      </blockquote>
-      <div className="flex gap-1">
-        <Button className="bg-white text-black border border-black px-4 py-2">Download CV</Button>
-        <Button variant="outline" className="border-black text-black px-4 py-2">
-          <span>Github</span>
-          <span>
-            <Github />
-          </span>
-        </Button>
+      <div className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-zinc-700 shrink-0">
+        <img
+          src={heroImage}
+          alt={`Portrait of ${hero.fullName}`}
+          className="object-cover w-full h-full"
+        />
       </div>
     </section>
   );

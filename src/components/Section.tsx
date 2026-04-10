@@ -9,7 +9,7 @@ type SectionProps = HtmlHTMLAttributes<HTMLElement> & {
 };
 
 const BASE =
-  "bg-zinc-900 py-20 flex flex-col text-center gap-4 justify-start items-center px-8 min-h-[400px] text-white";
+  "py-20 flex flex-col text-center gap-6 justify-start items-center px-8 min-h-[400px]";
 
 export default function Section({
   title,
@@ -20,8 +20,10 @@ export default function Section({
 }: SectionProps) {
   return (
     <section className={clsx(BASE, className)} {...rest}>
-      <H2>{title}</H2>
-      <p>{subTitle}</p>
+      <H2 className="text-2xl font-bold uppercase tracking-widest">{title}</H2>
+      {subTitle && (
+        <p className="text-sm max-w-2xl opacity-70">{subTitle}</p>
+      )}
       {children}
     </section>
   );

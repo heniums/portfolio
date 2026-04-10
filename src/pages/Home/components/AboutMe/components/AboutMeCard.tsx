@@ -1,5 +1,4 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
-import { H3 } from "src/components/headings/H3";
 
 export type AboutMeCardProps = DetailedHTMLProps<
   HTMLAttributes<HTMLElement>,
@@ -13,9 +12,11 @@ function AboutMeCard(props: AboutMeCardProps) {
   const { title, content } = props;
 
   return (
-    <article className="bg-zinc-800 text-zinc-100 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300">
-      <H3 className="text-lg font-bold mb-2">{title}</H3>
-      <p className="text-sm text-zinc-300">{content}</p>
+    <article className="bg-zinc-800/50 border border-zinc-700/50 rounded-lg p-6 text-left hover:border-zinc-500 transition-colors duration-300">
+      <h3 className="text-base font-bold text-white mb-3 uppercase tracking-wider">
+        {title}
+      </h3>
+      <p className="text-sm text-zinc-400 leading-relaxed">{content}</p>
     </article>
   );
 }
