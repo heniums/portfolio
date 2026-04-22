@@ -15,6 +15,7 @@ export type ProjectInfo = {
   description?: string;
   tags?: string[];
   url?: string;
+  sourceUrl?: string;
   thumbnail?: string;
 };
 

@@ -43,7 +43,7 @@ export const siteConfig: SiteConfig = {
     },
     portfolio: {
       title: "PORTFOLIO",
-      subTitle: "A selection of projects I've worked on.",
+      subTitle: "A selection of projects I've spent time on.",
     },
     techStack: {
       title: "TECH STACK",
@@ -119,34 +119,15 @@ export const experienceEntries: ExperienceEntry[] = [
 
 export const projectInfoList: ProjectInfo[] = [
   {
-    key: "project-a",
-    name: "Marketplace Platform",
+    key: "realtime-chat-app",
+    name: "Realtime Chat App",
     description:
-      "A full-featured online marketplace connecting buyers and sellers with real-time search, booking management, and integrated payments.",
-    tags: ["React", "Node.js", "Sharetribe"],
-    url: "#",
+      "A hobby chat project to demonstrate how WebSocket works",
+    tags: ["React", "Node.js", "WebSocket"],
+    url: "https://rtchatdemo.vercel.app",
+    sourceUrl: "https://github.com/heniums/realtime-chat-app",
     thumbnail:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-  },
-  {
-    key: "project-b",
-    name: "Payment Gateway Integration",
-    description:
-      "Multi-currency payment processing system supporting Stripe, Airwallex, and Wise for cross-border transactions.",
-    tags: ["Stripe", "Airwallex", "TypeScript"],
-    url: "#",
-    thumbnail:
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
-  },
-  {
-    key: "project-c",
-    name: "Portfolio Website",
-    description:
-      "Modern personal portfolio built with React, TypeScript, and Tailwind CSS. Fully responsive with smooth scroll animations.",
-    tags: ["React", "TypeScript", "Tailwind"],
-    url: siteConfig.social.github,
-    thumbnail:
-      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop",
+      "https://i.ibb.co/MDprSdNy/Screenshot-2026-04-23-at-00-03-39.png",
   },
 ];
 
