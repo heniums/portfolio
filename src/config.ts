@@ -103,7 +103,7 @@ export const experienceEntries: ExperienceEntry[] = [
   },
   {
     key: "journey-horizon",
-    company: "Journey Horizon",
+    company: "Journeyhorizon",
     companyUrl: "https://journeyhorizon.com",
     role: "Software Engineer",
     period: "Mar 2024 — Present",
