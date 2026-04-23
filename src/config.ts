@@ -26,7 +26,7 @@ export const siteConfig: SiteConfig = {
     greeting: "Hello, I'm",
     fullName: "Nguyen Van Hen",
     jobTitle: "Full-Stack Developer",
-    bio: "I build marketplace platforms and full-stack web applications. My edge is in React and Node.js — I'm the one writing the features, wiring up the payments, and figuring out why the Handlebars template isn't rendering. Cloud and DevOps? I'm comfortable there, but I'm not the one writing the Dockerfile from scratch.",
+    bio: "I build marketplace platforms and full-stack web applications. My edge is in React and Node.js — I'm the one writing the features, wiring up the payments, and figuring out why the Handlebars template isn't rendering. I also handle cloud deployments and DevOps when needed.",
     ctaPrimaryLabel: "Get in Touch",
     ctaSecondaryLabel: "GitHub",
   },
@@ -78,7 +78,7 @@ export const aboutMeInfoBlocks: InfoBlock[] = [
     key: "skills",
     title: "Skills",
     content:
-      "Full-stack web development with React, Node.js, and TypeScript is where I live. I integrate payment gateways (Stripe, Airwallex, Wise), build email flows, and work deeply with Sharetribe marketplaces. Comfortable with AWS, Docker, Nginx, and CI/CD — I deploy confidently but I'm not the infra architect.",
+      "Full-stack web development with React, Node.js, and TypeScript is where I live. I integrate payment gateways (Stripe, Airwallex, Wise), build email flows, and work deeply with Sharetribe marketplaces. Comfortable with AWS, Docker, Nginx, and CI/CD for deployments.",
   },
   {
     key: "personality",
@@ -105,7 +105,7 @@ export const experienceEntries: ExperienceEntry[] = [
     key: "journey-horizon",
     company: "Journey Horizon",
     companyUrl: "https://journeyhorizon.com",
-    role: "Associate Software Engineer",
+    role: "Software Engineer",
     period: "Mar 2024 — Present",
     description: [
       "Built and maintained 10+ Sharetribe-based marketplace platforms for international clients across AU, US, and EU regions.",
@@ -159,7 +159,7 @@ export const techCategories: TechCategoryData[] = [
   {
     key: "cloud-devops",
     title: "Cloud & DevOps",
-    note: "Comfortable deploying and operating — not the infra architect.",
+    note: "Comfortable deploying and operating cloud infrastructure.",
     items: ["AWS (EC2, S3, CloudFront, DynamoDB)", "Docker", "Nginx", "CircleCI", "GitHub Actions"],
   },
 ];
