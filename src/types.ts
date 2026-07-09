@@ -9,6 +9,12 @@ export type InfoBlock = {
   content: string;
 };
 
+export type InfoBlockGroup = {
+  key: string;
+  title: string;
+  blocks: InfoBlock[];
+};
+
 export type ProjectInfo = {
   key?: string;
   name: string;
