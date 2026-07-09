@@ -11,7 +11,7 @@
     - [ ] Add new blocks: AI & Tools, Interests, Location
     - [ ] Reassign existing blocks to appropriate groups
 
-- [ ] Task: Update `Home.tsx` prop passing
+- [x] Task: Update `Home.tsx` prop passing (e274bfe)
     - [ ] Change `<AboutMe infoBlocks={...}>` to `<AboutMe groups={...}>`
 
 ## Phase 2: Component Restructure
