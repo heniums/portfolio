@@ -36,6 +36,9 @@
 - [x] Task: Refactor AboutMe component for storytelling `a03ad82`
     - [x] Update AboutMe.tsx to render a single narrative paragraph
     - [x] Remove AboutMeCard.tsx (no longer needed)
+- [x] Task: Update hero bio and about me narrative with authentic voice `0397c4e`
+    - [x] Rewrite hero bio based on user interview (concise, no dashes)
+    - [x] Rewrite about me narrative with authentic, human voice
 - [ ] Task: Conductor - User Manual Verification 'Hero Badges & About Me Simplification' (Protocol in workflow.md)
 
 ## Phase 3: Build & Quality Verification
