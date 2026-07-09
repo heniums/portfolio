@@ -21,9 +21,9 @@
     - [x] Create `src/pages/Home/components/HeroBadge.tsx` — visually prominent badge/bill styling
 - [x] Task: Render hero badges in `Hero.tsx` `5e9218f`
     - [x] Import and render `HeroBadge` components from config data in the Hero section
-- [ ] Task: Simplify About Me in `src/config.ts`
-    - [ ] Remove Background group (education + TOEIC) from `aboutMeInfoBlocks`
-    - [ ] Remove Location block from Personal group in `aboutMeInfoBlocks`
+- [x] Task: Simplify About Me in `src/config.ts` `7fe747b`
+    - [x] Remove Background group (education + TOEIC) from `aboutMeInfoBlocks`
+    - [x] Remove Location block from Personal group in `aboutMeInfoBlocks`
 - [ ] Task: Conductor - User Manual Verification 'Hero Badges & About Me Simplification' (Protocol in workflow.md)
 
 ## Phase 3: Build & Quality Verification
