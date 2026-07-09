@@ -33,9 +33,9 @@
 - [x] Task: Update config.ts for narrative About Me `f9467a0`
     - [x] Replace `aboutMeInfoBlocks` with `aboutMeNarrative` text field
     - [x] Remove `InfoBlock` and `InfoBlockGroup` types from types.ts (no longer needed)
-- [~] Task: Refactor AboutMe component for storytelling
-    - [ ] Update AboutMe.tsx to render a single narrative paragraph
-    - [ ] Remove AboutMeCard.tsx (no longer needed)
+- [x] Task: Refactor AboutMe component for storytelling `a03ad82`
+    - [x] Update AboutMe.tsx to render a single narrative paragraph
+    - [x] Remove AboutMeCard.tsx (no longer needed)
 - [ ] Task: Conductor - User Manual Verification 'Hero Badges & About Me Simplification' (Protocol in workflow.md)
 
 ## Phase 3: Build & Quality Verification
