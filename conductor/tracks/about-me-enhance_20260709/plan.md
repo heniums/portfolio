@@ -5,7 +5,7 @@
 - [x] Task: Add `InfoBlockGroup` type to `src/types.ts` (bae903b)
     - [ ] Define type with `key: string`, `title: string`, `blocks: InfoBlock[]`
 
-- [ ] Task: Restructure `aboutMeInfoBlocks` in `src/config.ts`
+- [x] Task: Restructure `aboutMeInfoBlocks` in `src/config.ts` (d1a0d09)
     - [ ] Change from `InfoBlock[]` to `InfoBlockGroup[]`
     - [ ] Create 3 groups: Background, How I Work, Personal
     - [ ] Add new blocks: AI & Tools, Interests, Location
