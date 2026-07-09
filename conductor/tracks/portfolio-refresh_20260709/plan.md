@@ -1,59 +1,81 @@
 # Implementation Plan
 
-## Phase 1: Content & Layout Updates
+## Phase 1: Structure & Layout
 
 - [x] Task: Update Journey Horizon period in `src/config.ts` `b9da4d5`
     - [x] Change `"Mar 2024 — Present"` to `"Mar 2024 — May 2026"` in the Journeyhorizon entry
 - [x] Task: Add Kanban thumbnail placeholder in `src/config.ts` `656f1ae`
     - [x] Add `thumbnail` field to the Kanban project entry with a TODO comment
 - [x] Task: Reorder sections in `src/pages/Home/Home.tsx` `a73491c`
-    - [x] Reorder `<AnimatedSection>` components to: Tech → Experience → Projects → About → Contact
+    - [x] Reorder `<AnimatedSection>` components
 - [x] Task: Reorder nav links in `src/main.tsx` `3e89da5`
-    - [x] Reorder `links` array to match: Tech, Experience, Projects, About, Contact
-- [ ] Task: Conductor - User Manual Verification 'Content & Layout Updates' (Protocol in workflow.md)
+    - [x] Reorder `links` array to match new nav order
+- [ ] Task: Add Highlights section to Home.tsx (after Hero)
+    - [ ] Add `<AnimatedSection id="highlights">` with new `Highlights` component
+- [ ] Task: Conductor - User Manual Verification 'Structure & Layout' (Protocol in workflow.md)
 
-## Phase 2: Hero Badges & About Me Simplification
+## Phase 2: Hero & Contact Refactor
 
 - [x] Task: Add hero badges data to `src/config.ts` `4eb5c3a`
     - [x] Add `heroBadges` array to `siteConfig.hero` with Education, TOEIC, and Location entries
     - [x] Add `HeroBadge` type to `src/types.ts`
 - [x] Task: Create `HeroBadge` component `5e67ee2`
-    - [x] Create `src/pages/Home/components/HeroBadge.tsx` — visually prominent badge/bill styling
+    - [x] Create `src/pages/Home/components/HeroBadge.tsx`
 - [x] Task: Render hero badges in `Hero.tsx` `5e9218f`
-    - [x] Import and render `HeroBadge` components from config data in the Hero section
-- [x] Task: Simplify About Me in `src/config.ts` `7fe747b`
-    - [x] Remove Background group (education + TOEIC) from `aboutMeInfoBlocks`
-    - [x] Remove Location block from Personal group in `aboutMeInfoBlocks`
+    - [x] Import and render `HeroBadge` components
 - [x] Task: Add LinkedIn link to Hero section `58e6faa`
-    - [x] Import LinkedIn icon and add LinkedIn CTA button to Hero.tsx
+    - [x] Import LinkedIn icon and add LinkedIn CTA button
 - [x] Task: Remove Contact section from page layout `3d8cc93`
     - [x] Remove `<AnimatedSection id="contact">` from Home.tsx
 - [x] Task: Remove Contact link from navigation `530664a`
     - [x] Remove Contact entry from `links` array in main.tsx
-- [x] Task: Update config.ts for narrative About Me `f9467a0`
-    - [x] Replace `aboutMeInfoBlocks` with `aboutMeNarrative` text field
-    - [x] Remove `InfoBlock` and `InfoBlockGroup` types from types.ts (no longer needed)
-- [x] Task: Refactor AboutMe component for storytelling `a03ad82`
-    - [x] Update AboutMe.tsx to render a single narrative paragraph
-    - [x] Remove AboutMeCard.tsx (no longer needed)
-- [x] Task: Update hero bio and about me narrative with authentic voice `0397c4e`
-    - [x] Rewrite hero bio based on user interview (concise, no dashes)
-    - [x] Rewrite about me narrative with authentic, human voice
-- [x] Task: Restructure tech stack and update experience descriptions `8169878`
-    - [x] Reorganize tech stack into 4 clear categories (Marketplace, Frontend, Cloud, Data)
-    - [x] Update ITD Group experience with accurate descriptions
-    - [x] Update Journeyhorizon experience with specific technologies and achievements
-- [x] Task: Simplify tech stack badges and clean up experience descriptions `39f1a0d`
-    - [x] Remove Modern UI/UX, NoCODB, data migration details from tech stack
-    - [x] Shorten long badge labels for better layout
-    - [x] Remove bracket content from ITD WPF description
-- [x] Task: Refactor tech stack UI to use labels with badges `d8f0a09`
-    - [x] Update TechCategoryData type to support label+badges structure
-    - [x] Refactor TechCategory component to render labels and badges
-    - [x] Update config.ts to use new structure for Payment Systems and AWS
-- [ ] Task: Conductor - User Manual Verification 'Hero Badges & About Me Simplification' (Protocol in workflow.md)
+- [ ] Task: Rewrite hero title and bio for marketplace branding
+    - [ ] Change title from "Full-Stack Developer" to "Software Engineer specializing in Marketplace Platforms"
+    - [ ] Rewrite bio to communicate niche and geographic scope
+- [ ] Task: Conductor - User Manual Verification 'Hero & Contact Refactor' (Protocol in workflow.md)
 
-## Phase 3: Build & Quality Verification
+## Phase 3: Highlights Section
+
+- [ ] Task: Add `highlightsData` array to `src/config.ts`
+    - [ ] Define 5 highlight items (Experience, Deployments, Clients, Payments, Cloud)
+    - [ ] Add `HighlightItem` type to `src/types.ts`
+- [ ] Task: Create `Highlights` component
+    - [ ] Create `src/pages/Home/components/Highlights.tsx` with clean stat grid layout
+- [ ] Task: Conductor - User Manual Verification 'Highlights Section' (Protocol in workflow.md)
+
+## Phase 4: Experience & Projects Rewrite
+
+- [x] Task: Update ITD Group experience description
+    - [x] Rewrite WPF bullet to clarify real-world impact
+- [x] Task: Update Journeyhorizon experience descriptions `8169878`
+    - [x] Transform bullets from technology lists into achievement narratives
+- [ ] Task: Rewrite project descriptions to feature-focused
+    - [ ] Update Kanban description to emphasize features (drag-and-drop, optimistic updates, etc.)
+    - [ ] Update Realtime Chat description to emphasize features (WebSocket, auth, presence)
+- [ ] Task: Conductor - User Manual Verification 'Experience & Projects Rewrite' (Protocol in workflow.md)
+
+## Phase 5: Core Expertise Rebrand
+
+- [x] Task: Rename section title in config `39f1a0d`
+    - [x] Change "TECH STACK" to "CORE EXPERTISE"
+- [ ] Task: Restructure Core Expertise categories for capabilities-first
+    - [ ] Update Marketplace Platforms ⭐ category with capabilities (customization, payments, booking, etc.)
+    - [ ] Update Frontend category to minimal tech list
+    - [ ] Update Cloud category to minimal tech list
+    - [ ] Update Data category to minimal tech list
+- [ ] Task: Rename `techCategories` to `coreExpertiseCategories` in config (optional — keep variable name if too disruptive)
+- [ ] Task: Conductor - User Manual Verification 'Core Expertise Rebrand' (Protocol in workflow.md)
+
+## Phase 6: About Me Rewrite
+
+- [x] Task: Transform About Me to narrative format `a03ad82`
+    - [x] Replace cards with single paragraph
+- [ ] Task: Rewrite About Me narrative to personal reflection
+    - [ ] Update text to focus on problem-solving between product and implementation
+    - [ ] Emphasize maintainable code, documentation, and reliability
+- [ ] Task: Conductor - User Manual Verification 'About Me Rewrite' (Protocol in workflow.md)
+
+## Phase 7: Build & Quality Verification
 
 - [ ] Task: Run TypeScript type check (`npm run build`)
 - [ ] Task: Run ESLint (`npm run lint`)

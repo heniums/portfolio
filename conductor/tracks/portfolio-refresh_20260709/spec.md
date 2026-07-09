@@ -2,16 +2,16 @@
 
 ## Overview
 
-Update portfolio content to reflect current professional status and reorder page sections for better recruiter-friendliness (skills-first layout).
+Complete portfolio redesign to establish clear professional branding as a **Marketplace Platform Engineer** and optimize recruiter scanability. Restructure content hierarchy so that experience and capabilities lead, while technology reinforces the story rather than dominates it.
 
 ## Functional Requirements
 
-### FR1: Reorder Sections (Skills-First)
+### FR1: Reorder Sections (Experience-First)
 
 Change the page layout from:
-`Hero → About → Experience → Projects → Tech → Contact`
+`Hero → Tech Stack → Experience → Projects → About`
 to:
-`Hero → Tech Stack → Experience → Projects → About → Contact`
+`Hero → Highlights → Experience → Projects → Core Expertise → About`
 
 This requires updating:
 - `src/pages/Home/Home.tsx` — reorder `<AnimatedSection>` components
@@ -24,61 +24,125 @@ Change the period for the Journeyhorizon experience entry from:
 to:
 `"Mar 2024 — May 2026"`
 
-This is a single-string change in `src/config.ts`.
-
 ### FR3: Add Kanban Project Thumbnail
 
-Add a placeholder thumbnail URL to the existing Kanban project entry. The user will provide the actual URL later, but a TODO comment should mark the placeholder.
+Add a placeholder thumbnail URL to the existing Kanban project entry. The user will provide the actual URL later, but a `// TODO` comment should mark the placeholder.
 
-### FR4: Hero Spotlight Badges
+### FR4: Hero Branding Refactor
 
-Add three spotlight badges to the Hero section highlighting key credentials:
-- **Education:** Bachelor of Software Engineering, GPA 8.86/10
-- **TOEIC:** Listening & Reading 965/990
-- **Location:** Ho Chi Minh City, Vietnam
+**Title:** Replace generic "Full-Stack Developer" with:
+> Software Engineer specializing in Marketplace Platforms
 
-These should be visually remarkable and spotlighted — styled as prominent badges/bills in the Hero area. Data should originate from `src/config.ts`.
+**Bio:** Rewrite to immediately communicate niche and scope:
+> I build and deploy marketplace platforms used by businesses across Europe, Australia, North America, and Asia. My work focuses on React, payment integrations, booking systems, internationalization, and AWS deployments.
 
-### FR5: Simplify About Me
+**Badges:** Retain Education, TOEIC, and Location badges in Hero.
 
-Remove the following from the About Me section (now promoted to Hero):
-- Education block (from Background group)
-- TOEIC block (from Background group)
-- Location block (from Personal group)
+**Contact buttons:** Retain Email, GitHub, and LinkedIn CTAs in Hero.
 
-The Background group should be removed entirely. The Personal group should retain only Interests and Personality.
+### FR5: Add Highlights Section (New)
 
-### FR6: Merge Contact Section into Hero
+Insert a new **Highlights** section immediately after Hero to give recruiters a 5-second summary:
 
-The standalone Contact section is redundant since the Hero already contains CTA buttons for email and GitHub. Merge contact functionality into the Hero section:
-- Add LinkedIn link to Hero (currently only in Contact section)
-- Remove the standalone Contact section from page layout
-- Remove Contact link from navigation
+- **2+ Years Experience**
+- **10+ Marketplace Deployments**
+- **International Clients** — EU • Australia • North America • Asia
+- **Payment Systems** — Stripe • Airwallex • Wise
+- **Cloud** — AWS • Docker • CircleCI
 
-This simplifies the page structure while keeping all contact options accessible from the Hero.
+Create a new `Highlights` component and `highlightsData` config array.
 
-### FR7: Transform About Me to Storytelling Format
+### FR6: Rewrite Experience as Achievement Narratives
 
-Replace the card-based About Me section with a concise narrative paragraph. This creates a more personal, engaging tone while maintaining minimalism:
-- Remove the `aboutMeInfoBlocks` structure (cards with titles)
-- Replace with a single `aboutMeNarrative` text field in config
-- Update AboutMe component to render a simple paragraph
-- Keep it to 3-4 sentences max, focusing on who you are and what drives you
+Transform Journeyhorizon bullets from technology lists into achievement stories:
+
+- "Customized Sharetribe marketplaces to meet client-specific business requirements."
+- "Built marketplace features including payment processing, booking, transaction workflows, and multilingual support."
+- "Deployed production applications to AWS using EC2, Nginx, Docker, and CircleCI."
+- "Integrated Stripe, Airwallex, Wise, and iCal into client platforms."
+- "Migrated customer data from Airtable and legacy systems into NoCoDB and Sharetribe."
+- "Collaborated with designers, backend engineers, and clients throughout feature delivery."
+
+Update ITD Group to clarify real-world impact:
+- "Developed a WPF desktop application used by operators to design and publish content to electronic highway message signs."
+
+### FR7: Projects → Feature-Focused Descriptions
+
+Rewrite project descriptions to emphasize **features** over technologies:
+
+**Kanban:**
+> Real-time collaborative kanban board with drag-and-drop, optimistic updates, role-based permissions, and Socket.IO live sync.
+
+**Realtime Chat:**
+> Hobby project demonstrating WebSocket real-time messaging with user authentication and presence indicators.
+
+### FR8: Tech Stack → Core Expertise
+
+Rename section title from "TECH STACK" to "CORE EXPERTISE".
+
+Restructure categories to focus on **capabilities** rather than raw technology lists:
+
+**Marketplace Platforms ⭐**
+- Sharetribe
+- Marketplace customization
+- Payment integrations
+- Booking & iCal
+- Transaction workflows
+- Internationalization
+- Email automation
+
+**Frontend**
+- React
+- TypeScript
+- Blazor
+- WPF
+
+**Deployment & Cloud**
+- AWS EC2
+- Lambda
+- S3
+- Docker
+- Nginx
+- CircleCI
+
+**Data & Integration**
+- PostgreSQL
+- DynamoDB
+- NoCoDB
+- SQL
+- REST APIs
+- Data migration
+
+### FR9: About Me — Personal Story
+
+Replace current generic narrative with a personal, reflective paragraph:
+
+> I enjoy solving problems that sit between product ideas and implementation. Whether it's designing a transaction workflow, integrating a payment provider, or deploying a marketplace to production, I like understanding how all the pieces fit together. I care about writing maintainable code, documenting my work, and building software that's reliable for both users and teammates.
+
+### FR10: Merge Contact into Hero (Already Implemented)
+
+Contact section remains merged into Hero per previous work. No standalone Contact section.
 
 ## Acceptance Criteria
 
-- [ ] Page sections appear in order: Hero → Tech Stack → Experience → Projects → About
+- [ ] Page sections appear in order: Hero → Highlights → Experience → Projects → Core Expertise → About
 - [ ] TopBar navigation links match the new section order (no Contact link)
 - [ ] Journey Horizon experience shows "Mar 2024 — May 2026"
 - [ ] Kanban project has a thumbnail placeholder with a `// TODO` comment
-- [ ] Hero section displays Education, TOEIC, and Location as spotlight badges
-- [ ] Hero section contains all contact links (Email, GitHub, LinkedIn)
-- [ ] About Me displays as a narrative paragraph (not cards)
+- [ ] Hero title reads "Software Engineer specializing in Marketplace Platforms"
+- [ ] Hero bio communicates marketplace niche and geographic scope
+- [ ] Highlights section displays 5 key stats immediately after Hero
+- [ ] Experience bullets read as achievement narratives, not technology lists
+- [ ] Project descriptions emphasize features over technologies
+- [ ] Section title "TECH STACK" renamed to "CORE EXPERTISE"
+- [ ] Core Expertise categories lead with capabilities (Marketplace Platforms ⭐)
+- [ ] About Me reads as a personal reflection, not a generic bio
 - [ ] `npm run build` passes (TypeScript check + Vite build)
 - [ ] `npm run lint` passes with zero warnings
 
 ## Out of Scope
 
 - Adding new projects beyond Kanban
-- Changes to tech stack categories or items
+- Visual redesign or new color schemes
 - SEO updates
+- Adding a separate Education section (credentials remain in Hero badges)
