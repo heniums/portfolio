@@ -2,6 +2,8 @@ import A from "src/components/A";
 import Github from "src/components/icons/Github";
 import heroImage from "src/assets/me.jpg";
 import { siteConfig } from "src/config";
+import HeroBadge from "./HeroBadge";
+import { speardProps } from "src/utils/component";
 
 function Hero() {
   const { hero, social } = siteConfig;
@@ -19,6 +21,11 @@ function Hero() {
           {hero.jobTitle}
         </p>
         <p className="text-sm text-zinc-400 leading-relaxed">{hero.bio}</p>
+        {hero.badges && hero.badges.length > 0 && (
+          <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+            {hero.badges.map(speardProps(HeroBadge))}
+          </div>
+        )}
         <div className="flex gap-3 justify-center lg:justify-start">
           <A
             href={`mailto:${social.email}`}
