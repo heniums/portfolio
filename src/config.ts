@@ -159,6 +159,8 @@ export const projectInfoList: ProjectInfo[] = [
     tags: ["React", "Next.js", "Socket.io", "PostgreSQL", "Drizzle", "Tailwind CSS"],
     url: "https://kanban-heniums.vercel.app",
     sourceUrl: "https://github.com/heniums/kanban",
+    // TODO: Replace with actual thumbnail URL
+    thumbnail: "",
   },
 ];
 
