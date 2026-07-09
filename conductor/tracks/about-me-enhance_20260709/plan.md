@@ -29,8 +29,8 @@
 - [x] Task: Run build check (07f6084)
     - [ ] Execute `npm run build` and confirm successful compilation
 
-- [~] Task: Conductor - User Manual Verification 'All Phases' (Protocol in workflow.md)
-    - [ ] Start dev server with `npm run dev`
-    - [ ] Verify 2 labeled groups: Background, Personal
-    - [ ] Verify Interests, Location blocks appear with correct content
-    - [ ] Verify existing blocks (Education, Personality, TOEIC) still render correctly
+- [x] Task: Conductor - User Manual Verification 'All Phases' (Protocol in workflow.md) [checkpoint: b56c1a4]
+    - [x] Start dev server with `npm run dev`
+    - [x] Verify 2 labeled groups: Background, Personal
+    - [x] Verify Interests, Location blocks appear with correct content
+    - [x] Verify existing blocks (Education, Personality, TOEIC) still render correctly
