@@ -9,16 +9,12 @@ function HeroBadge({ label, value, className }: HeroBadgeProps) {
   return (
     <div
       className={clsx(
-        "flex flex-col items-center gap-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3 min-w-[160px]",
+        "flex items-center gap-2 text-xs text-zinc-400",
         className,
       )}
     >
-      <span className="text-[10px] uppercase tracking-widest text-zinc-400 font-medium">
-        {label}
-      </span>
-      <span className="text-sm font-semibold text-white text-center leading-snug">
-        {value}
-      </span>
+      <span className="uppercase tracking-wider text-zinc-500">{label}</span>
+      <span className="text-zinc-300">{value}</span>
     </div>
   );
 }
