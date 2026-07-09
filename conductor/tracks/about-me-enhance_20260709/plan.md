@@ -16,7 +16,7 @@
 
 ## Phase 2: Component Restructure
 
-- [ ] Task: Update `AboutMe.tsx` to render grouped layout
+- [x] Task: Update `AboutMe.tsx` to render grouped layout (f565b08)
     - [ ] Accept `groups: InfoBlockGroup[]` prop instead of `infoBlocks: InfoBlock[]`
     - [ ] Render each group with a heading label and divider
     - [ ] Render cards within each group using existing `AboutMeCard` + `speardProps`
