@@ -1,5 +1,5 @@
 import {
-  aboutMeInfoBlocks,
+  aboutMeNarrative,
   projectInfoList,
   experienceEntries,
   techCategories,
@@ -26,7 +26,7 @@ function Home() {
         <Portfolio projectInfoList={projectInfoList} />
       </AnimatedSection>
       <AnimatedSection id="about">
-        <AboutMe groups={aboutMeInfoBlocks} />
+        <AboutMe narrative={aboutMeNarrative} />
       </AnimatedSection>
     </main>
   );
