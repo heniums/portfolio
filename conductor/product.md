@@ -25,7 +25,7 @@ A clean, fast, and professional single-page portfolio website that serves as the
 ## Core Features
 
 - **Hero Section:** Name, job title, short bio, and primary CTAs (Contact / GitHub).
-- **About Me:** Education background, core skills summary, and personality statement.
+- **About Me:** Grouped into 2 labeled sections — Background (Education, TOEIC) and Personal (Location, Interests, Personality) — with visual dividers.
 - **Experience Timeline:** Chronological work history with company links, roles, periods, and bullet-point contributions.
 - **Portfolio Grid:** Project cards with thumbnails, descriptions, tech tags, and links to live demos and source code.
 - **Tech Stack Categories:** Grouped technology lists (Frontend, Backend, Marketplace, Payments, Cloud & DevOps) with contextual notes.
