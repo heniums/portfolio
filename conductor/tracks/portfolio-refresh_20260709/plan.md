@@ -47,6 +47,10 @@
     - [x] Remove Modern UI/UX, NoCODB, data migration details from tech stack
     - [x] Shorten long badge labels for better layout
     - [x] Remove bracket content from ITD WPF description
+- [x] Task: Refactor tech stack UI to use labels with badges `d8f0a09`
+    - [x] Update TechCategoryData type to support label+badges structure
+    - [x] Refactor TechCategory component to render labels and badges
+    - [x] Update config.ts to use new structure for Payment Systems and AWS
 - [ ] Task: Conductor - User Manual Verification 'Hero Badges & About Me Simplification' (Protocol in workflow.md)
 
 ## Phase 3: Build & Quality Verification
