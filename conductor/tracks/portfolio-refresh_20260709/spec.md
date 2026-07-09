@@ -57,6 +57,14 @@ The standalone Contact section is redundant since the Hero already contains CTA 
 
 This simplifies the page structure while keeping all contact options accessible from the Hero.
 
+### FR7: Transform About Me to Storytelling Format
+
+Replace the card-based About Me section with a concise narrative paragraph. This creates a more personal, engaging tone while maintaining minimalism:
+- Remove the `aboutMeInfoBlocks` structure (cards with titles)
+- Replace with a single `aboutMeNarrative` text field in config
+- Update AboutMe component to render a simple paragraph
+- Keep it to 3-4 sentences max, focusing on who you are and what drives you
+
 ## Acceptance Criteria
 
 - [ ] Page sections appear in order: Hero → Tech Stack → Experience → Projects → About
@@ -65,7 +73,7 @@ This simplifies the page structure while keeping all contact options accessible 
 - [ ] Kanban project has a thumbnail placeholder with a `// TODO` comment
 - [ ] Hero section displays Education, TOEIC, and Location as spotlight badges
 - [ ] Hero section contains all contact links (Email, GitHub, LinkedIn)
-- [ ] About Me no longer contains Education, TOEIC, or Location
+- [ ] About Me displays as a narrative paragraph (not cards)
 - [ ] `npm run build` passes (TypeScript check + Vite build)
 - [ ] `npm run lint` passes with zero warnings
 

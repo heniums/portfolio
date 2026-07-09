@@ -30,6 +30,12 @@
     - [x] Remove `<AnimatedSection id="contact">` from Home.tsx
 - [x] Task: Remove Contact link from navigation `530664a`
     - [x] Remove Contact entry from `links` array in main.tsx
+- [ ] Task: Update config.ts for narrative About Me
+    - [ ] Replace `aboutMeInfoBlocks` with `aboutMeNarrative` text field
+    - [ ] Remove `InfoBlock` and `InfoBlockGroup` types from types.ts (no longer needed)
+- [ ] Task: Refactor AboutMe component for storytelling
+    - [ ] Update AboutMe.tsx to render a single narrative paragraph
+    - [ ] Remove AboutMeCard.tsx (no longer needed)
 - [ ] Task: Conductor - User Manual Verification 'Hero Badges & About Me Simplification' (Protocol in workflow.md)
 
 ## Phase 3: Build & Quality Verification
