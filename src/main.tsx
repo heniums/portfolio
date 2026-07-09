@@ -10,8 +10,8 @@ import "./index.css";
 
 const links: TopbarMenuLinkConfig[] = [
   {
-    label: "Tech",
-    link: "#tech",
+    label: "Highlights",
+    link: "#highlights",
   },
   {
     label: "Experience",
@@ -20,6 +20,10 @@ const links: TopbarMenuLinkConfig[] = [
   {
     label: "Projects",
     link: "#projects",
+  },
+  {
+    label: "Tech",
+    link: "#tech",
   },
   {
     label: "About",

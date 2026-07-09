@@ -22,6 +22,13 @@ export type ExperienceEntry = {
   description: string[];
 };
 
+export type HighlightItem = {
+  key: string;
+  label: string;
+  value: string;
+  detail?: string;
+};
+
 export type TechCategoryData = {
   key: string;
   title: string;

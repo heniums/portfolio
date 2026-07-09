@@ -4,6 +4,7 @@ import type {
   TechCategoryData,
   ContactLink,
   SiteConfig,
+  HighlightItem,
 } from "src/types";
 
 // =============================================================================
@@ -24,8 +25,8 @@ export const siteConfig: SiteConfig = {
   hero: {
     greeting: "Hello, I'm",
     fullName: "Nguyen Van Hen",
-    jobTitle: "Full-Stack Developer",
-    bio: "I build modern, user-friendly applications with 2+ years of experience in marketplace platforms, payment integrations, and cloud deployments. I love tweaking everything until it works and then tweaking it some more.",
+    jobTitle: "Software Engineer specializing in Marketplace Platforms",
+    bio: "I build and deploy marketplace platforms used by businesses across Europe, Australia, North America, and Asia. My work focuses on React, payment integrations, booking systems, internationalization, and AWS deployments.",
     ctaPrimaryLabel: "Get in Touch",
     ctaSecondaryLabel: "GitHub",
     badges: [
@@ -65,8 +66,8 @@ export const siteConfig: SiteConfig = {
       subTitle: "A selection of projects I've spent time on.",
     },
     techStack: {
-      title: "TECH STACK",
-      subTitle: "Technologies and tools I work with daily.",
+      title: "CORE EXPERTISE",
+      subTitle: "What I do best.",
     },
     contact: {
       title: "CONTACT",
@@ -87,7 +88,35 @@ export const siteConfig: SiteConfig = {
 // =============================================================================
 
 export const aboutMeNarrative =
-  "Give me a problem that makes me think, and I'm hooked. I read the docs when I can, document my work so others don't have to guess, and always try to leave things better than I found them. At the end of the day, I just want to build stuff that makes life easier for the people using it.";
+  "I enjoy solving problems that sit between product ideas and implementation. Whether it's designing a transaction workflow, integrating a payment provider, or deploying a marketplace to production, I like understanding how all the pieces fit together. I care about writing maintainable code, documenting my work, and building software that's reliable for both users and teammates.";
+
+export const highlightsData: HighlightItem[] = [
+  {
+    key: "experience",
+    label: "Experience",
+    value: "2+ Years",
+  },
+  {
+    key: "deployments",
+    label: "Marketplace Deployments",
+    value: "10+",
+  },
+  {
+    key: "clients",
+    label: "International Clients",
+    value: "EU • AU • NA • Asia",
+  },
+  {
+    key: "payments",
+    label: "Payment Systems",
+    value: "Stripe • Airwallex • Wise",
+  },
+  {
+    key: "cloud",
+    label: "Cloud",
+    value: "AWS • Docker • CircleCI",
+  },
+];
 
 export const experienceEntries: ExperienceEntry[] = [
   {
@@ -97,9 +126,9 @@ export const experienceEntries: ExperienceEntry[] = [
     role: "Frontend Developer Intern",
     period: "Oct 2023 — Dec 2023",
     description: [
-      "Built UI components with Blazor and ASP.NET for admin dashboard",
-      "Implemented SQL query sanitization for data security",
-      "Developed WPF desktop application for controlling dynamic highway message signs",
+      "Built UI components with Blazor and ASP.NET for admin dashboard.",
+      "Implemented SQL query sanitization for data security.",
+      "Developed a WPF desktop application used by operators to design and publish content to electronic highway message signs.",
     ],
   },
   {
@@ -109,12 +138,12 @@ export const experienceEntries: ExperienceEntry[] = [
     role: "Software Engineer",
     period: "Mar 2024 — May 2026",
     description: [
-      "Customized and deployed Sharetribe marketplace platforms for international clients (EU, AU, US, Asia) using Vite-fork template",
-      "Integrated payment systems (Stripe, Airwallex, Wise) and calendar systems (iCal)",
-      "Deployed marketplaces to AWS EC2, configured Nginx, managed CI/CD pipelines with CircleCI",
-      "Performed data migrations between platforms (Airtable to NoCODB, legacy systems to Sharetribe)",
-      "Designed transaction state machines and implemented internationalization",
-      "Worked with PostgreSQL, DynamoDB, Lambda, S3, and NoCODB",
+      "Customized Sharetribe marketplaces to meet client-specific business requirements.",
+      "Built marketplace features including payment processing, booking, transaction workflows, and multilingual support.",
+      "Deployed production applications to AWS using EC2, Nginx, Docker, and CircleCI.",
+      "Integrated Stripe, Airwallex, Wise, and iCal into client platforms.",
+      "Migrated customer data from Airtable and legacy systems into NoCoDB and Sharetribe.",
+      "Collaborated with designers, backend engineers, and clients throughout feature delivery.",
     ],
   },
 ];
@@ -124,7 +153,7 @@ export const projectInfoList: ProjectInfo[] = [
     key: "realtime-chat-app",
     name: "Realtime Chat App",
     description:
-      "A hobby chat project to demonstrate how WebSocket works",
+      "Hobby project demonstrating WebSocket real-time messaging with user authentication and presence indicators.",
     tags: ["React", "Node.js", "WebSocket"],
     url: "https://chat-heniums.vercel.app",
     sourceUrl: "https://github.com/heniums/realtime-chat-app",
@@ -135,7 +164,7 @@ export const projectInfoList: ProjectInfo[] = [
     key: "kanban",
     name: "Kanban",
     description:
-      "A real-time collaborative kanban board application for teams that want to move work forward.",
+      "Real-time collaborative kanban board with drag-and-drop, optimistic updates, role-based permissions, and Socket.IO live sync.",
     tags: ["React", "Next.js", "Socket.io", "PostgreSQL", "Drizzle", "Tailwind CSS"],
     url: "https://kanban-heniums.vercel.app",
     sourceUrl: "https://github.com/heniums/kanban",
@@ -147,42 +176,49 @@ export const projectInfoList: ProjectInfo[] = [
 export const techCategories: TechCategoryData[] = [
   {
     key: "marketplace-platforms",
-    title: "Marketplace Platforms",
-    note: "Core expertise — deep customization and deployment experience.",
+    title: "Marketplace Platforms ⭐",
+    note: "Core expertise — capabilities built across multiple production platforms.",
     items: [
-      "Sharetribe",
-      { label: "Payment Systems", badges: ["Stripe", "Airwallex", "Wise"] },
-      "Transaction State Machines",
-      "iCal/Calendar Integration",
-      "Internationalization (i18n)",
+      "Marketplace customization",
+      { label: "Payment integrations", badges: ["Stripe", "Airwallex", "Wise"] },
+      "Booking & iCal",
+      "Transaction workflows",
+      "Internationalization",
+      "Email automation",
     ],
   },
   {
-    key: "frontend-development",
-    title: "Frontend Development",
+    key: "frontend",
+    title: "Frontend",
     note: "Building modern, user-friendly interfaces.",
-    items: ["React/TypeScript", "Blazor/ASP.NET", "WPF"],
+    items: ["React", "TypeScript", "Blazor", "WPF"],
   },
   {
-    key: "cloud-infrastructure",
-    title: "Cloud & Infrastructure",
+    key: "cloud",
+    title: "Deployment & Cloud",
     note: "Deploying and managing production systems.",
     items: [
       {
         label: "AWS",
-        badges: ["EC2", "Lambda", "S3", "DynamoDB"],
+        badges: ["EC2", "Lambda", "S3"],
       },
       "Docker",
       "Nginx",
-      "CI/CD",
-      "PostgreSQL",
+      "CircleCI",
     ],
   },
   {
-    key: "data-integration",
+    key: "data",
     title: "Data & Integration",
     note: "Moving and transforming data between systems.",
-    items: ["Email Templates"],
+    items: [
+      "PostgreSQL",
+      "DynamoDB",
+      "NoCoDB",
+      "SQL",
+      "REST APIs",
+      "Data migration",
+    ],
   },
 ];
 
