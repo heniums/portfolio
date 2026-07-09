@@ -8,8 +8,8 @@
     - [x] Add `thumbnail` field to the Kanban project entry with a TODO comment
 - [x] Task: Reorder sections in `src/pages/Home/Home.tsx` `a73491c`
     - [x] Reorder `<AnimatedSection>` components to: Tech → Experience → Projects → About → Contact
-- [ ] Task: Reorder nav links in `src/main.tsx`
-    - [ ] Reorder `links` array to match: Tech, Experience, Projects, About, Contact
+- [x] Task: Reorder nav links in `src/main.tsx` `3e89da5`
+    - [x] Reorder `links` array to match: Tech, Experience, Projects, About, Contact
 - [ ] Task: Conductor - User Manual Verification 'Content & Layout Updates' (Protocol in workflow.md)
 
 ## Phase 2: Build & Quality Verification
