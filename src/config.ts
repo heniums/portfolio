@@ -99,7 +99,7 @@ export const experienceEntries: ExperienceEntry[] = [
     description: [
       "Built UI components with Blazor and ASP.NET for admin dashboard",
       "Implemented SQL query sanitization for data security",
-      "Developed WPF desktop application for controlling dynamic highway message signs (frontend only, backend provided by third-party partner)",
+      "Developed WPF desktop application for controlling dynamic highway message signs",
     ],
   },
   {
@@ -149,25 +149,25 @@ export const techCategories: TechCategoryData[] = [
     key: "marketplace-platforms",
     title: "Marketplace Platforms",
     note: "Core expertise — deep customization and deployment experience.",
-    items: ["Sharetribe", "Payment Systems (Stripe, Airwallex, Wise)", "Transaction State Machines", "iCal/Calendar Integration", "Internationalization (i18n)"],
+    items: ["Sharetribe", "Payment Systems", "Transaction State Machines", "iCal/Calendar Integration", "Internationalization (i18n)"],
   },
   {
     key: "frontend-development",
     title: "Frontend Development",
     note: "Building modern, user-friendly interfaces.",
-    items: ["React/TypeScript", "Blazor/ASP.NET", "WPF", "Modern UI/UX"],
+    items: ["React/TypeScript", "Blazor/ASP.NET", "WPF"],
   },
   {
     key: "cloud-infrastructure",
     title: "Cloud & Infrastructure",
     note: "Deploying and managing production systems.",
-    items: ["AWS (EC2, Lambda, S3, DynamoDB)", "Docker", "Nginx", "CI/CD (CircleCI, GitHub Actions)", "PostgreSQL", "NoCODB"],
+    items: ["AWS (EC2, Lambda, S3, DynamoDB)", "Docker", "Nginx", "CI/CD", "PostgreSQL"],
   },
   {
     key: "data-integration",
     title: "Data & Integration",
     note: "Moving and transforming data between systems.",
-    items: ["Data Migration (Airtable → NoCODB, legacy → Sharetribe)", "Email Templates (SendGrid, Stripo)", "API Integration"],
+    items: ["Email Templates"],
   },
 ];
 
