@@ -14,9 +14,9 @@
 
 ## Phase 2: Hero Badges & About Me Simplification
 
-- [ ] Task: Add hero badges data to `src/config.ts`
-    - [ ] Add `heroBadges` array to `siteConfig.hero` with Education, TOEIC, and Location entries
-    - [ ] Add `HeroBadge` type to `src/types.ts`
+- [x] Task: Add hero badges data to `src/config.ts` `4eb5c3a`
+    - [x] Add `heroBadges` array to `siteConfig.hero` with Education, TOEIC, and Location entries
+    - [x] Add `HeroBadge` type to `src/types.ts`
 - [ ] Task: Create `HeroBadge` component
     - [ ] Create `src/pages/Home/components/HeroBadge.tsx` — visually prominent badge/bill styling
 - [ ] Task: Render hero badges in `Hero.tsx`
