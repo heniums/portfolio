@@ -19,8 +19,8 @@
     - [x] Add `HeroBadge` type to `src/types.ts`
 - [x] Task: Create `HeroBadge` component `5e67ee2`
     - [x] Create `src/pages/Home/components/HeroBadge.tsx` — visually prominent badge/bill styling
-- [ ] Task: Render hero badges in `Hero.tsx`
-    - [ ] Import and render `HeroBadge` components from config data in the Hero section
+- [x] Task: Render hero badges in `Hero.tsx` `5e9218f`
+    - [x] Import and render `HeroBadge` components from config data in the Hero section
 - [ ] Task: Simplify About Me in `src/config.ts`
     - [ ] Remove Background group (education + TOEIC) from `aboutMeInfoBlocks`
     - [ ] Remove Location block from Personal group in `aboutMeInfoBlocks`
