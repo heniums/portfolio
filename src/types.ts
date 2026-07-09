@@ -25,7 +25,7 @@ export type ExperienceEntry = {
 export type TechCategoryData = {
   key: string;
   title: string;
-  items: string[];
+  items: (string | { label: string; badges: string[] })[];
   note?: string;
 };
 

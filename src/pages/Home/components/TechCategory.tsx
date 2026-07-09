@@ -15,15 +15,35 @@ function TechCategory(props: TechCategoryProps) {
       ) : (
         <div className="mb-3" />
       )}
-      <div className="flex flex-wrap gap-2">
-        {items.map((item) => (
-          <span
-            key={item}
-            className="text-sm px-3 py-1.5 bg-zinc-900 text-zinc-100 rounded-md font-medium"
-          >
-            {item}
-          </span>
-        ))}
+      <div className="flex flex-wrap gap-2 items-center">
+        {items.map((item, index) => {
+          if (typeof item === "string") {
+            return (
+              <span
+                key={index}
+                className="text-sm px-3 py-1.5 bg-zinc-900 text-zinc-100 rounded-md font-medium"
+              >
+                {item}
+              </span>
+            );
+          } else {
+            return (
+              <div key={index} className="flex flex-wrap gap-2 items-center">
+                <span className="text-sm font-medium text-zinc-700 mr-1">
+                  {item.label}:
+                </span>
+                {item.badges.map((badge) => (
+                  <span
+                    key={badge}
+                    className="text-sm px-3 py-1.5 bg-zinc-900 text-zinc-100 rounded-md font-medium"
+                  >
+                    {badge}
+                  </span>
+                ))}
+              </div>
+            );
+          }
+        })}
       </div>
     </div>
   );

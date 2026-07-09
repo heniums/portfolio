@@ -149,7 +149,13 @@ export const techCategories: TechCategoryData[] = [
     key: "marketplace-platforms",
     title: "Marketplace Platforms",
     note: "Core expertise — deep customization and deployment experience.",
-    items: ["Sharetribe", "Payment Systems", "Transaction State Machines", "iCal/Calendar Integration", "Internationalization (i18n)"],
+    items: [
+      "Sharetribe",
+      { label: "Payment Systems", badges: ["Stripe", "Airwallex", "Wise"] },
+      "Transaction State Machines",
+      "iCal/Calendar Integration",
+      "Internationalization (i18n)",
+    ],
   },
   {
     key: "frontend-development",
@@ -161,7 +167,16 @@ export const techCategories: TechCategoryData[] = [
     key: "cloud-infrastructure",
     title: "Cloud & Infrastructure",
     note: "Deploying and managing production systems.",
-    items: ["AWS (EC2, Lambda, S3, DynamoDB)", "Docker", "Nginx", "CI/CD", "PostgreSQL"],
+    items: [
+      {
+        label: "AWS",
+        badges: ["EC2", "Lambda", "S3", "DynamoDB"],
+      },
+      "Docker",
+      "Nginx",
+      "CI/CD",
+      "PostgreSQL",
+    ],
   },
   {
     key: "data-integration",
