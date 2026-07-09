@@ -3,12 +3,6 @@ export type TopbarMenuLinkConfig = {
   link: string;
 };
 
-export type InfoBlock = {
-  key: string;
-  title: string;
-  content: string;
-};
-
 export type ProjectInfo = {
   key?: string;
   name: string;
@@ -28,10 +22,17 @@ export type ExperienceEntry = {
   description: string[];
 };
 
+export type HighlightItem = {
+  key: string;
+  label: string;
+  value: string;
+  detail?: string;
+};
+
 export type TechCategoryData = {
   key: string;
   title: string;
-  items: string[];
+  items: (string | { label: string; badges: string[] })[];
   note?: string;
 };
 
@@ -48,6 +49,13 @@ export type SocialLinks = {
   email: string;
 };
 
+export type HeroBadge = {
+  key: string;
+  label: string;
+  value: string;
+  icon?: string;
+};
+
 export type HeroConfig = {
   greeting: string;
   fullName: string;
@@ -55,6 +63,7 @@ export type HeroConfig = {
   bio: string;
   ctaPrimaryLabel: string;
   ctaSecondaryLabel: string;
+  badges?: HeroBadge[];
 };
 
 export type SectionMeta = {

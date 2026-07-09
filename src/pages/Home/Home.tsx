@@ -1,9 +1,8 @@
 import {
-  aboutMeInfoBlocks,
+  aboutMeNarrative,
   projectInfoList,
   experienceEntries,
   techCategories,
-  contactLinks,
 } from "src/config";
 
 import AnimatedSection from "src/components/AnimatedSection";
@@ -12,14 +11,13 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import TechStack from "./components/TechStack";
-import Contact from "./components/Contact";
 
 function Home() {
   return (
     <main>
       <Hero />
-      <AnimatedSection id="about">
-        <AboutMe infoBlocks={aboutMeInfoBlocks} />
+      <AnimatedSection id="tech">
+        <TechStack categories={techCategories} />
       </AnimatedSection>
       <AnimatedSection id="experience">
         <Experience entries={experienceEntries} />
@@ -27,11 +25,8 @@ function Home() {
       <AnimatedSection id="projects">
         <Portfolio projectInfoList={projectInfoList} />
       </AnimatedSection>
-      <AnimatedSection id="tech">
-        <TechStack categories={techCategories} />
-      </AnimatedSection>
-      <AnimatedSection id="contact">
-        <Contact links={contactLinks} />
+      <AnimatedSection id="about">
+        <AboutMe narrative={aboutMeNarrative} />
       </AnimatedSection>
     </main>
   );

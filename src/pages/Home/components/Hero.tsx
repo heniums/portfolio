@@ -1,7 +1,10 @@
 import A from "src/components/A";
 import Github from "src/components/icons/Github";
+import Linkedin from "src/components/icons/Linkedin";
 import heroImage from "src/assets/me.jpg";
 import { siteConfig } from "src/config";
+import HeroBadge from "./HeroBadge";
+import { speardProps } from "src/utils/component";
 
 function Hero() {
   const { hero, social } = siteConfig;
@@ -15,10 +18,15 @@ function Hero() {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
           {hero.fullName}
         </h1>
-        <p className="text-lg md:text-xl text-zinc-300 font-light">
+        <p className="text-lg md:text-xl text-white font-medium">
           {hero.jobTitle}
         </p>
         <p className="text-sm text-zinc-400 leading-relaxed">{hero.bio}</p>
+        {hero.badges && hero.badges.length > 0 && (
+          <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+            {hero.badges.map(speardProps(HeroBadge))}
+          </div>
+        )}
         <div className="flex gap-3 justify-center lg:justify-start">
           <A
             href={`mailto:${social.email}`}
@@ -35,6 +43,16 @@ function Hero() {
           >
             <span>{hero.ctaSecondaryLabel}</span>
             <Github className="w-4 h-4 border-white" />
+          </A>
+          <A
+            href={social.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outline"
+            className="border-zinc-600 text-zinc-300 px-5 py-2.5 hover:border-white hover:text-white transition-colors duration-200"
+          >
+            <span>LinkedIn</span>
+            <Linkedin className="w-4 h-4 border-white" />
           </A>
         </div>
       </div>

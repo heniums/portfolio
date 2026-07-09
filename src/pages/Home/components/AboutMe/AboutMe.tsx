@@ -1,17 +1,14 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-import type { InfoBlock } from "src/types";
 import { siteConfig } from "src/config";
-import AboutMeCard from "./components/AboutMeCard";
 import Section from "src/components/Section";
-import { speardProps } from "src/utils/component";
 
 type AboutMeProps = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> & {
-  infoBlocks?: InfoBlock[];
+  narrative?: string;
 };
 
 function AboutMe(props: AboutMeProps) {
-  const { infoBlocks = [], ...rest } = props;
+  const { narrative = "", ...rest } = props;
   const { title, subTitle } = siteConfig.sections.about;
 
   return (
@@ -21,9 +18,9 @@ function AboutMe(props: AboutMeProps) {
       subTitle={subTitle}
       className="bg-zinc-900 text-white"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
-        {infoBlocks.map(speardProps(AboutMeCard))}
-      </div>
+      <p className="text-base md:text-lg text-zinc-300 leading-relaxed max-w-3xl">
+        {narrative}
+      </p>
     </Section>
   );
 }

@@ -1,0 +1,8 @@
+{
+  "track_id": "portfolio-refresh_20260709",
+  "type": "chore",
+  "status": "completed",
+  "created_at": "2026-07-09T14:49:00Z",
+  "updated_at": "2026-07-09T17:45:00Z",
+  "description": "Update portfolio content (Journey Horizon end date, Kanban thumbnail), reorder sections to Core Expertise-first layout, revamp Core Expertise UI, and refactor Hero branding"
+}

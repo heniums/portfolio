@@ -1,5 +1,4 @@
 import type {
-  InfoBlock,
   ProjectInfo,
   ExperienceEntry,
   TechCategoryData,
@@ -25,10 +24,30 @@ export const siteConfig: SiteConfig = {
   hero: {
     greeting: "Hello, I'm",
     fullName: "Nguyen Van Hen",
-    jobTitle: "Full-Stack Developer",
-    bio: "I build marketplace platforms and full-stack web applications. My edge is in React and Node.js — I'm the one writing the features, wiring up the payments, and figuring out why the Handlebars template isn't rendering. I also handle cloud deployments and DevOps when needed.",
+    jobTitle: "Software Engineer specializing in Marketplace Platforms",
+    bio: "I build and deploy marketplace platforms used by businesses across Europe, Australia, North America, and Asia. My work focuses on React, payment integrations, booking systems, internationalization, and AWS deployments.",
     ctaPrimaryLabel: "Get in Touch",
     ctaSecondaryLabel: "GitHub",
+    badges: [
+      {
+        key: "education",
+        label: "Education",
+        value: "B.Sc. Software Engineering — UIT (VNU-HCM) — GPA 8.86/10",
+        icon: "academic",
+      },
+      {
+        key: "toeic",
+        label: "TOEIC",
+        value: "Listening & Reading: 965/990",
+        icon: "language",
+      },
+      {
+        key: "location",
+        label: "Location",
+        value: "Ho Chi Minh City, Vietnam",
+        icon: "location",
+      },
+    ],
   },
 
   sections: {
@@ -46,8 +65,8 @@ export const siteConfig: SiteConfig = {
       subTitle: "A selection of projects I've spent time on.",
     },
     techStack: {
-      title: "TECH STACK",
-      subTitle: "Technologies and tools I work with daily.",
+      title: "CORE EXPERTISE",
+      subTitle: "What I do best.",
     },
     contact: {
       title: "CONTACT",
@@ -67,26 +86,8 @@ export const siteConfig: SiteConfig = {
 // CONTENT DATA — Edit these arrays to update section content.
 // =============================================================================
 
-export const aboutMeInfoBlocks: InfoBlock[] = [
-  {
-    key: "education",
-    title: "Education",
-    content:
-      "Bachelor of Software Engineering from the University of Information Technology, HCMC. Graduated with GPA 8.86/10.",
-  },
-  {
-    key: "skills",
-    title: "Skills",
-    content:
-      "Full-stack web development with React, Node.js, and TypeScript is where I live. I integrate payment gateways (Stripe, Airwallex, Wise), build email flows, and work deeply with Sharetribe marketplaces. Comfortable with AWS, Docker, Nginx, and CI/CD for deployments.",
-  },
-  {
-    key: "personality",
-    title: "Personality",
-    content:
-      "Dedicated and results-oriented. I approach work with enthusiasm and strive for elegant, maintainable solutions.",
-  },
-];
+export const aboutMeNarrative =
+  "I enjoy solving problems that sit between product ideas and implementation. Whether it's designing a transaction workflow, integrating a payment provider, or deploying a marketplace to production, I like understanding how all the pieces fit together. I care about writing maintainable code, documenting my work, and building software that's reliable for both users and teammates.";
 
 export const experienceEntries: ExperienceEntry[] = [
   {
@@ -96,9 +97,9 @@ export const experienceEntries: ExperienceEntry[] = [
     role: "Frontend Developer Intern",
     period: "Oct 2023 — Dec 2023",
     description: [
-      "Worked with graph-based data visualization for a highway camera tracking system using Blazor and ASP.NET.",
-      "Contributed to the frontend of an admin dashboard built with Blazor, including the login screen.",
-      "Built a WPF desktop application to manage dynamic highway sign content — enabling operators to push new text and position updates to roadside display boards.",
+      "Built UI components with Blazor and ASP.NET for admin dashboard.",
+      "Implemented SQL query sanitization for data security.",
+      "Developed a WPF desktop application used by operators to design and publish content to electronic highway message signs.",
     ],
   },
   {
@@ -106,13 +107,14 @@ export const experienceEntries: ExperienceEntry[] = [
     company: "Journeyhorizon",
     companyUrl: "https://journeyhorizon.com",
     role: "Software Engineer",
-    period: "Mar 2024 — Present",
+    period: "Mar 2024 — May 2026",
     description: [
-      "Built and maintained 10+ Sharetribe-based marketplace platforms for international clients across AU, US, and EU regions.",
-      "Integrated payment gateways including Stripe, Airwallex, and Wise for multi-currency transaction processing.",
-      "Handled production deployments and server migrations using AWS, Docker, Nginx, and CI/CD pipelines — following established infrastructure guides.",
-      "Executed complex data migrations and platform upgrades across multiple marketplace environments.",
-      "Delivered full-stack features across React frontends, Node.js backends, and marketplace-specific flows (transactions, state machines, emails, internationalization).",
+      "Customized Sharetribe marketplaces to meet client-specific business requirements.",
+      "Built marketplace features including payment processing, booking, transaction workflows, and multilingual support.",
+      "Deployed production applications to AWS using EC2, Nginx, Docker, and CircleCI.",
+      "Integrated Stripe, Airwallex, Wise, and iCal into client platforms.",
+      "Migrated customer data from Airtable and legacy systems into NoCoDB and Sharetribe.",
+      "Collaborated with designers, backend engineers, and clients throughout feature delivery.",
     ],
   },
 ];
@@ -122,12 +124,22 @@ export const projectInfoList: ProjectInfo[] = [
     key: "realtime-chat-app",
     name: "Realtime Chat App",
     description:
-      "A hobby chat project to demonstrate how WebSocket works",
+      "Hobby project demonstrating WebSocket real-time messaging with user authentication and presence indicators.",
     tags: ["React", "Node.js", "WebSocket"],
-    url: "https://rtchatdemo.vercel.app",
+    url: "https://chat.heniums.vercel.app",
     sourceUrl: "https://github.com/heniums/realtime-chat-app",
     thumbnail:
       "https://i.ibb.co/MDprSdNy/Screenshot-2026-04-23-at-00-03-39.png",
+  },
+  {
+    key: "kanban",
+    name: "Kanban",
+    description:
+      "Real-time collaborative kanban board with drag-and-drop, optimistic updates, role-based permissions, and Socket.IO live sync.",
+    tags: ["React", "Next.js", "Socket.io", "PostgreSQL", "Drizzle", "Tailwind CSS"],
+    url: "https://kanban.heniums.vercel.app",
+    sourceUrl: "https://github.com/heniums/kanban",
+    thumbnail: "https://i.ibb.co/nMHKMPtw/kanban-app-thumbnail.png",
   },
 ];
 
@@ -135,32 +147,32 @@ export const techCategories: TechCategoryData[] = [
   {
     key: "frontend",
     title: "Frontend",
-    note: "Day-to-day — this is where most of my work lives.",
-    items: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
+    note: "Building modern, user-friendly interfaces.",
+    items: ["Next.js", "React", "TypeScript", "Blazor", "WPF (C#)", "Tailwind CSS"],
   },
   {
     key: "backend",
     title: "Backend",
-    note: "APIs, business logic, and server-side features.",
-    items: ["Node.js", "Express", "REST APIs"],
+    note: "APIs, real-time systems, and data layers.",
+    items: ["WebSocket", "Express", "PostgreSQL", "Drizzle ORM", "REST"],
   },
   {
-    key: "platforms",
-    title: "Marketplace",
-    note: "Deep domain expertise — I know the internals well.",
-    items: ["Sharetribe", "Handlebars", "Transaction State Machines", "i18n"],
+    key: "cloud",
+    title: "Cloud & Deployment",
+    note: "Deploying and managing production systems.",
+    items: ["AWS", "Docker", "Nginx"],
   },
   {
-    key: "payments",
-    title: "Payments & Email",
-    note: "Integrated across multiple production platforms.",
-    items: ["Stripe", "Airwallex", "Wise", "SendGrid", "Stripo"],
-  },
-  {
-    key: "cloud-devops",
-    title: "Cloud & DevOps",
-    note: "Comfortable deploying and operating cloud infrastructure.",
-    items: ["AWS (EC2, S3, CloudFront, DynamoDB)", "Docker", "Nginx", "CircleCI", "GitHub Actions"],
+    key: "marketplace",
+    title: "Marketplace Related",
+    note: "Capabilities built across production marketplace platforms.",
+    items: [
+      "Sharetribe",
+      { label: "Payment systems", badges: ["Wise", "Airwallex", "Stripe"] },
+      "State machine",
+      "Email automation (SendGrid)",
+      "i18n",
+    ],
   },
 ];
 
