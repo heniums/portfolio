@@ -97,9 +97,9 @@ export const experienceEntries: ExperienceEntry[] = [
     role: "Frontend Developer Intern",
     period: "Oct 2023 — Dec 2023",
     description: [
-      "Worked with graph-based data visualization for a highway camera tracking system using Blazor and ASP.NET.",
-      "Contributed to the frontend of an admin dashboard built with Blazor, including the login screen.",
-      "Built a WPF desktop application to manage dynamic highway sign content — enabling operators to push new text and position updates to roadside display boards.",
+      "Built UI components with Blazor and ASP.NET for admin dashboard",
+      "Implemented SQL query sanitization for data security",
+      "Developed WPF desktop application for controlling dynamic highway message signs (frontend only, backend provided by third-party partner)",
     ],
   },
   {
@@ -109,11 +109,12 @@ export const experienceEntries: ExperienceEntry[] = [
     role: "Software Engineer",
     period: "Mar 2024 — May 2026",
     description: [
-      "Built and maintained 10+ Sharetribe-based marketplace platforms for international clients across AU, US, and EU regions.",
-      "Integrated payment gateways including Stripe, Airwallex, and Wise for multi-currency transaction processing.",
-      "Handled production deployments and server migrations using AWS, Docker, Nginx, and CI/CD pipelines — following established infrastructure guides.",
-      "Executed complex data migrations and platform upgrades across multiple marketplace environments.",
-      "Delivered full-stack features across React frontends, Node.js backends, and marketplace-specific flows (transactions, state machines, emails, internationalization).",
+      "Customized and deployed Sharetribe marketplace platforms for international clients (EU, AU, US, Asia) using Vite-fork template",
+      "Integrated payment systems (Stripe, Airwallex, Wise) and calendar systems (iCal)",
+      "Deployed marketplaces to AWS EC2, configured Nginx, managed CI/CD pipelines with CircleCI",
+      "Performed data migrations between platforms (Airtable to NoCODB, legacy systems to Sharetribe)",
+      "Designed transaction state machines and implemented internationalization",
+      "Worked with PostgreSQL, DynamoDB, Lambda, S3, and NoCODB",
     ],
   },
 ];
@@ -145,34 +146,28 @@ export const projectInfoList: ProjectInfo[] = [
 
 export const techCategories: TechCategoryData[] = [
   {
-    key: "frontend",
-    title: "Frontend",
-    note: "Day-to-day — this is where most of my work lives.",
-    items: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
+    key: "marketplace-platforms",
+    title: "Marketplace Platforms",
+    note: "Core expertise — deep customization and deployment experience.",
+    items: ["Sharetribe", "Payment Systems (Stripe, Airwallex, Wise)", "Transaction State Machines", "iCal/Calendar Integration", "Internationalization (i18n)"],
   },
   {
-    key: "backend",
-    title: "Backend",
-    note: "APIs, business logic, and server-side features.",
-    items: ["Node.js", "Express", "REST APIs"],
+    key: "frontend-development",
+    title: "Frontend Development",
+    note: "Building modern, user-friendly interfaces.",
+    items: ["React/TypeScript", "Blazor/ASP.NET", "WPF", "Modern UI/UX"],
   },
   {
-    key: "platforms",
-    title: "Marketplace",
-    note: "Deep domain expertise — I know the internals well.",
-    items: ["Sharetribe", "Handlebars", "Transaction State Machines", "i18n"],
+    key: "cloud-infrastructure",
+    title: "Cloud & Infrastructure",
+    note: "Deploying and managing production systems.",
+    items: ["AWS (EC2, Lambda, S3, DynamoDB)", "Docker", "Nginx", "CI/CD (CircleCI, GitHub Actions)", "PostgreSQL", "NoCODB"],
   },
   {
-    key: "payments",
-    title: "Payments & Email",
-    note: "Integrated across multiple production platforms.",
-    items: ["Stripe", "Airwallex", "Wise", "SendGrid", "Stripo"],
-  },
-  {
-    key: "cloud-devops",
-    title: "Cloud & DevOps",
-    note: "Comfortable deploying and operating cloud infrastructure.",
-    items: ["AWS (EC2, S3, CloudFront, DynamoDB)", "Docker", "Nginx", "CircleCI", "GitHub Actions"],
+    key: "data-integration",
+    title: "Data & Integration",
+    note: "Moving and transforming data between systems.",
+    items: ["Data Migration (Airtable → NoCODB, legacy → Sharetribe)", "Email Templates (SendGrid, Stripo)", "API Integration"],
   },
 ];
 
