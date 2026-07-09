@@ -32,7 +32,7 @@ export const siteConfig: SiteConfig = {
       {
         key: "education",
         label: "Education",
-        value: "B.Sc. Software Engineering — GPA 8.86/10",
+        value: "B.Sc. Software Engineering — UIT (VNU-HCM) — GPA 8.86/10",
         icon: "academic",
       },
       {
@@ -126,7 +126,7 @@ export const projectInfoList: ProjectInfo[] = [
     description:
       "Hobby project demonstrating WebSocket real-time messaging with user authentication and presence indicators.",
     tags: ["React", "Node.js", "WebSocket"],
-    url: "https://chat-heniums.vercel.app",
+    url: "https://chat.heniums.vercel.app",
     sourceUrl: "https://github.com/heniums/realtime-chat-app",
     thumbnail:
       "https://i.ibb.co/MDprSdNy/Screenshot-2026-04-23-at-00-03-39.png",
@@ -137,10 +137,9 @@ export const projectInfoList: ProjectInfo[] = [
     description:
       "Real-time collaborative kanban board with drag-and-drop, optimistic updates, role-based permissions, and Socket.IO live sync.",
     tags: ["React", "Next.js", "Socket.io", "PostgreSQL", "Drizzle", "Tailwind CSS"],
-    url: "https://kanban-heniums.vercel.app",
+    url: "https://kanban.heniums.vercel.app",
     sourceUrl: "https://github.com/heniums/kanban",
-    // TODO: Replace with actual thumbnail URL
-    thumbnail: "",
+    thumbnail: "https://i.ibb.co/nMHKMPtw/kanban-app-thumbnail.png",
   },
 ];
 

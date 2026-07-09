@@ -9,5 +9,9 @@ type BadgeProps = DetailedHTMLProps<
 
 export function Badge(props: BadgeProps) {
   const { text = "" } = props;
-  return <span className="text-xs bg-white/20 px-3 p-1 rounded-lg font-bold">{text}</span>;
+  return (
+    <span className="text-xs bg-zinc-900/80 text-zinc-100 px-3 p-1 rounded-lg font-bold border border-white/10 backdrop-blur-sm">
+      {text}
+    </span>
+  );
 }
