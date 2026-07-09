@@ -3,7 +3,6 @@ import {
   projectInfoList,
   experienceEntries,
   techCategories,
-  contactLinks,
 } from "src/config";
 
 import AnimatedSection from "src/components/AnimatedSection";
@@ -12,7 +11,6 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import TechStack from "./components/TechStack";
-import Contact from "./components/Contact";
 
 function Home() {
   return (
@@ -29,9 +27,6 @@ function Home() {
       </AnimatedSection>
       <AnimatedSection id="about">
         <AboutMe groups={aboutMeInfoBlocks} />
-      </AnimatedSection>
-      <AnimatedSection id="contact">
-        <Contact links={contactLinks} />
       </AnimatedSection>
     </main>
   );
