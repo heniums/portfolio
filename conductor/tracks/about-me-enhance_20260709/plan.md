@@ -26,7 +26,7 @@
 - [x] Task: Run lint check (b80531a)
     - [ ] Execute `npm run lint` and confirm zero warnings
 
-- [ ] Task: Run build check
+- [x] Task: Run build check (07f6084)
     - [ ] Execute `npm run build` and confirm successful compilation
 
 - [ ] Task: Conductor - User Manual Verification 'All Phases' (Protocol in workflow.md)
