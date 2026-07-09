@@ -48,13 +48,23 @@ Remove the following from the About Me section (now promoted to Hero):
 
 The Background group should be removed entirely. The Personal group should retain only Interests and Personality.
 
+### FR6: Merge Contact Section into Hero
+
+The standalone Contact section is redundant since the Hero already contains CTA buttons for email and GitHub. Merge contact functionality into the Hero section:
+- Add LinkedIn link to Hero (currently only in Contact section)
+- Remove the standalone Contact section from page layout
+- Remove Contact link from navigation
+
+This simplifies the page structure while keeping all contact options accessible from the Hero.
+
 ## Acceptance Criteria
 
-- [ ] Page sections appear in order: Hero → Tech Stack → Experience → Projects → About → Contact
-- [ ] TopBar navigation links match the new section order
+- [ ] Page sections appear in order: Hero → Tech Stack → Experience → Projects → About
+- [ ] TopBar navigation links match the new section order (no Contact link)
 - [ ] Journey Horizon experience shows "Mar 2024 — May 2026"
 - [ ] Kanban project has a thumbnail placeholder with a `// TODO` comment
 - [ ] Hero section displays Education, TOEIC, and Location as spotlight badges
+- [ ] Hero section contains all contact links (Email, GitHub, LinkedIn)
 - [ ] About Me no longer contains Education, TOEIC, or Location
 - [ ] `npm run build` passes (TypeScript check + Vite build)
 - [ ] `npm run lint` passes with zero warnings
