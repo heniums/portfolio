@@ -54,6 +54,13 @@ export type SocialLinks = {
   email: string;
 };
 
+export type HeroBadge = {
+  key: string;
+  label: string;
+  value: string;
+  icon?: string;
+};
+
 export type HeroConfig = {
   greeting: string;
   fullName: string;
@@ -61,6 +68,7 @@ export type HeroConfig = {
   bio: string;
   ctaPrimaryLabel: string;
   ctaSecondaryLabel: string;
+  badges?: HeroBadge[];
 };
 
 export type SectionMeta = {

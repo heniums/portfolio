@@ -29,6 +29,26 @@ export const siteConfig: SiteConfig = {
     bio: "I build marketplace platforms and full-stack web applications. My edge is in React and Node.js — I'm the one writing the features, wiring up the payments, and figuring out why the Handlebars template isn't rendering. I also handle cloud deployments and DevOps when needed.",
     ctaPrimaryLabel: "Get in Touch",
     ctaSecondaryLabel: "GitHub",
+    badges: [
+      {
+        key: "education",
+        label: "Education",
+        value: "B.Sc. Software Engineering — GPA 8.86/10",
+        icon: "academic",
+      },
+      {
+        key: "toeic",
+        label: "TOEIC",
+        value: "Listening & Reading: 965/990",
+        icon: "language",
+      },
+      {
+        key: "location",
+        label: "Location",
+        value: "Ho Chi Minh City, Vietnam",
+        icon: "location",
+      },
+    ],
   },
 
   sections: {
