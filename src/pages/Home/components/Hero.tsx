@@ -1,5 +1,6 @@
 import A from "src/components/A";
 import Github from "src/components/icons/Github";
+import Linkedin from "src/components/icons/Linkedin";
 import heroImage from "src/assets/me.jpg";
 import { siteConfig } from "src/config";
 import HeroBadge from "./HeroBadge";
@@ -42,6 +43,16 @@ function Hero() {
           >
             <span>{hero.ctaSecondaryLabel}</span>
             <Github className="w-4 h-4 border-white" />
+          </A>
+          <A
+            href={social.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outline"
+            className="border-zinc-600 text-zinc-300 px-5 py-2.5 hover:border-white hover:text-white transition-colors duration-200"
+          >
+            <span>LinkedIn</span>
+            <Linkedin className="w-4 h-4 border-white" />
           </A>
         </div>
       </div>
