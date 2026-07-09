@@ -4,8 +4,8 @@
 
 - [x] Task: Update Journey Horizon period in `src/config.ts` `b9da4d5`
     - [x] Change `"Mar 2024 — Present"` to `"Mar 2024 — May 2026"` in the Journeyhorizon entry
-- [ ] Task: Add Kanban thumbnail placeholder in `src/config.ts`
-    - [ ] Add `thumbnail` field to the Kanban project entry with a TODO comment
+- [x] Task: Add Kanban thumbnail placeholder in `src/config.ts` `656f1ae`
+    - [x] Add `thumbnail` field to the Kanban project entry with a TODO comment
 - [ ] Task: Reorder sections in `src/pages/Home/Home.tsx`
     - [ ] Reorder `<AnimatedSection>` components to: Tech → Experience → Projects → About → Contact
 - [ ] Task: Reorder nav links in `src/main.tsx`
