@@ -17,7 +17,7 @@ function Hero() {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
           {hero.fullName}
         </h1>
-        <p className="text-lg md:text-xl text-zinc-300 font-light">
+        <p className="text-lg md:text-xl text-emerald-400 font-medium">
           {hero.jobTitle}
         </p>
         <p className="text-sm text-zinc-400 leading-relaxed">{hero.bio}</p>
