@@ -18,8 +18,8 @@ function Home() {
   return (
     <main>
       <Hero />
-      <AnimatedSection id="about">
-        <AboutMe groups={aboutMeInfoBlocks} />
+      <AnimatedSection id="tech">
+        <TechStack categories={techCategories} />
       </AnimatedSection>
       <AnimatedSection id="experience">
         <Experience entries={experienceEntries} />
@@ -27,8 +27,8 @@ function Home() {
       <AnimatedSection id="projects">
         <Portfolio projectInfoList={projectInfoList} />
       </AnimatedSection>
-      <AnimatedSection id="tech">
-        <TechStack categories={techCategories} />
+      <AnimatedSection id="about">
+        <AboutMe groups={aboutMeInfoBlocks} />
       </AnimatedSection>
       <AnimatedSection id="contact">
         <Contact links={contactLinks} />
