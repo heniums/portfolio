@@ -2,8 +2,8 @@
 
 ## Phase 1: Content & Layout Updates
 
-- [ ] Task: Update Journey Horizon period in `src/config.ts`
-    - [ ] Change `"Mar 2024 — Present"` to `"Mar 2024 — May 2026"` in the Journeyhorizon entry
+- [x] Task: Update Journey Horizon period in `src/config.ts` `b9da4d5`
+    - [x] Change `"Mar 2024 — Present"` to `"Mar 2024 — May 2026"` in the Journeyhorizon entry
 - [ ] Task: Add Kanban thumbnail placeholder in `src/config.ts`
     - [ ] Add `thumbnail` field to the Kanban project entry with a TODO comment
 - [ ] Task: Reorder sections in `src/pages/Home/Home.tsx`
