@@ -25,7 +25,7 @@ export const siteConfig: SiteConfig = {
     greeting: "Hello, I'm",
     fullName: "Nguyen Van Hen",
     jobTitle: "Full-Stack Developer",
-    bio: "Full-stack developer focused on modern, user-friendly applications. 2+ years building marketplace platforms, payment integrations, and cloud deployments. I love tweaking everything until it works and then tweaking it some more.",
+    bio: "I build modern, user-friendly applications with 2+ years of experience in marketplace platforms, payment integrations, and cloud deployments. I love tweaking everything until it works and then tweaking it some more.",
     ctaPrimaryLabel: "Get in Touch",
     ctaSecondaryLabel: "GitHub",
     badges: [
