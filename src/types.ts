@@ -3,18 +3,6 @@ export type TopbarMenuLinkConfig = {
   link: string;
 };
 
-export type InfoBlock = {
-  key: string;
-  title: string;
-  content: string;
-};
-
-export type InfoBlockGroup = {
-  key: string;
-  title: string;
-  blocks: InfoBlock[];
-};
-
 export type ProjectInfo = {
   key?: string;
   name: string;

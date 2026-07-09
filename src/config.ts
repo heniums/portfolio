@@ -1,5 +1,4 @@
 import type {
-  InfoBlockGroup,
   ProjectInfo,
   ExperienceEntry,
   TechCategoryData,
@@ -87,26 +86,8 @@ export const siteConfig: SiteConfig = {
 // CONTENT DATA — Edit these arrays to update section content.
 // =============================================================================
 
-export const aboutMeInfoBlocks: InfoBlockGroup[] = [
-  {
-    key: "personal",
-    title: "Personal",
-    blocks: [
-      {
-        key: "interests",
-        title: "Interests",
-        content:
-          "Side projects, exploring new technologies, and open source.",
-      },
-      {
-        key: "personality",
-        title: "Personality",
-        content:
-          "Dedicated and results-oriented. I approach work with enthusiasm and strive for elegant, maintainable solutions.",
-      },
-    ],
-  },
-];
+export const aboutMeNarrative =
+  "I'm a software engineer who thrives on building things that matter. With a background in software engineering and deep experience in marketplace platforms, I focus on writing clean, maintainable code that solves real problems. I'm passionate about React, TypeScript, and creating seamless user experiences. When I'm not coding, you'll find me exploring new technologies or contributing to open source.";
 
 export const experienceEntries: ExperienceEntry[] = [
   {
