@@ -43,6 +43,10 @@
     - [x] Reorganize tech stack into 4 clear categories (Marketplace, Frontend, Cloud, Data)
     - [x] Update ITD Group experience with accurate descriptions
     - [x] Update Journeyhorizon experience with specific technologies and achievements
+- [x] Task: Simplify tech stack badges and clean up experience descriptions `39f1a0d`
+    - [x] Remove Modern UI/UX, NoCODB, data migration details from tech stack
+    - [x] Shorten long badge labels for better layout
+    - [x] Remove bracket content from ITD WPF description
 - [ ] Task: Conductor - User Manual Verification 'Hero Badges & About Me Simplification' (Protocol in workflow.md)
 
 ## Phase 3: Build & Quality Verification
