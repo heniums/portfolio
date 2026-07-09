@@ -1,5 +1,5 @@
 import type {
-  InfoBlock,
+  InfoBlockGroup,
   ProjectInfo,
   ExperienceEntry,
   TechCategoryData,
@@ -67,24 +67,64 @@ export const siteConfig: SiteConfig = {
 // CONTENT DATA — Edit these arrays to update section content.
 // =============================================================================
 
-export const aboutMeInfoBlocks: InfoBlock[] = [
+export const aboutMeInfoBlocks: InfoBlockGroup[] = [
   {
-    key: "education",
-    title: "Education",
-    content:
-      "Bachelor of Software Engineering from the University of Information Technology, HCMC. Graduated with GPA 8.86/10.",
+    key: "background",
+    title: "Background",
+    blocks: [
+      {
+        key: "education",
+        title: "Education",
+        content:
+          "Bachelor of Software Engineering from the University of Information Technology, HCMC. Graduated with GPA 8.86/10.",
+      },
+      {
+        key: "toeic",
+        title: "TOEIC",
+        content: "TOEIC Listening & Reading: 965/990",
+      },
+    ],
   },
   {
-    key: "skills",
-    title: "Skills",
-    content:
-      "Full-stack web development with React, Node.js, and TypeScript is where I live. I integrate payment gateways (Stripe, Airwallex, Wise), build email flows, and work deeply with Sharetribe marketplaces. Comfortable with AWS, Docker, Nginx, and CI/CD for deployments.",
+    key: "how-i-work",
+    title: "How I Work",
+    blocks: [
+      {
+        key: "skills",
+        title: "Skills",
+        content:
+          "Full-stack web development with React, Node.js, and TypeScript is where I live. I integrate payment gateways (Stripe, Airwallex, Wise), build email flows, and work deeply with Sharetribe marketplaces. Comfortable with AWS, Docker, Nginx, and CI/CD for deployments.",
+      },
+      {
+        key: "ai-tools",
+        title: "AI & Tools",
+        content:
+          "I incorporate AI tools into my daily workflow to speed up research, debugging, and boilerplate.",
+      },
+    ],
   },
   {
-    key: "personality",
-    title: "Personality",
-    content:
-      "Dedicated and results-oriented. I approach work with enthusiasm and strive for elegant, maintainable solutions.",
+    key: "personal",
+    title: "Personal",
+    blocks: [
+      {
+        key: "location",
+        title: "Location",
+        content: "Ho Chi Minh City, Vietnam",
+      },
+      {
+        key: "interests",
+        title: "Interests",
+        content:
+          "Side projects, exploring new technologies, and open source.",
+      },
+      {
+        key: "personality",
+        title: "Personality",
+        content:
+          "Dedicated and results-oriented. I approach work with enthusiasm and strive for elegant, maintainable solutions.",
+      },
+    ],
   },
 ];
 
@@ -124,10 +164,19 @@ export const projectInfoList: ProjectInfo[] = [
     description:
       "A hobby chat project to demonstrate how WebSocket works",
     tags: ["React", "Node.js", "WebSocket"],
-    url: "https://rtchatdemo.vercel.app",
+    url: "https://chat-heniums.vercel.app",
     sourceUrl: "https://github.com/heniums/realtime-chat-app",
     thumbnail:
       "https://i.ibb.co/MDprSdNy/Screenshot-2026-04-23-at-00-03-39.png",
+  },
+  {
+    key: "kanban",
+    name: "Kanban",
+    description:
+      "A real-time collaborative kanban board application for teams that want to move work forward.",
+    tags: ["React", "Next.js", "Socket.io", "PostgreSQL", "Drizzle", "Tailwind CSS"],
+    url: "https://kanban-heniums.vercel.app",
+    sourceUrl: "https://github.com/heniums/kanban",
   },
 ];
 
