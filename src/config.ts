@@ -97,23 +97,13 @@ export const highlightsData: HighlightItem[] = [
     value: "2+ Years",
   },
   {
-    key: "deployments",
-    label: "Marketplace Deployments",
-    value: "10+",
-  },
-  {
-    key: "clients",
-    label: "International Clients",
-    value: "EU • AU • NA • Asia",
-  },
-  {
     key: "payments",
     label: "Payment Systems",
     value: "Stripe • Airwallex • Wise",
   },
   {
     key: "cloud",
-    label: "Cloud",
+    label: "Cloud & Infrastructure",
     value: "AWS • Docker • CircleCI",
   },
 ];
