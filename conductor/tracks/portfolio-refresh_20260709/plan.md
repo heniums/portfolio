@@ -39,6 +39,10 @@
 - [x] Task: Update hero bio and about me narrative with authentic voice `0397c4e`
     - [x] Rewrite hero bio based on user interview (concise, no dashes)
     - [x] Rewrite about me narrative with authentic, human voice
+- [x] Task: Restructure tech stack and update experience descriptions `8169878`
+    - [x] Reorganize tech stack into 4 clear categories (Marketplace, Frontend, Cloud, Data)
+    - [x] Update ITD Group experience with accurate descriptions
+    - [x] Update Journeyhorizon experience with specific technologies and achievements
 - [ ] Task: Conductor - User Manual Verification 'Hero Badges & About Me Simplification' (Protocol in workflow.md)
 
 ## Phase 3: Build & Quality Verification
