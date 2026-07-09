@@ -5,7 +5,7 @@
 A content update chore to refresh portfolio data in `src/config.ts`. Three changes:
 1. Update the Realtime Chat App project URL
 2. Add a new Kanban project entry
-3. Add TOEIC score to the About Me section
+3. Add TOEIC score to the Hero badges
 
 ## Track Type
 
@@ -29,21 +29,22 @@ Add a new project entry to `projectInfoList` with:
 |-------|-------|
 | key | `kanban` |
 | name | `Kanban` |
-| description | `A real-time collaborative kanban board application for teams that want to move work forward.` |
+| description | `Real-time collaborative kanban board with drag-and-drop, optimistic updates, role-based permissions, and Socket.IO live sync.` |
 | tags | `["React", "Next.js", "Socket.io", "PostgreSQL", "Drizzle", "Tailwind CSS"]` |
 | url | `https://kanban-heniums.vercel.app` |
 | sourceUrl | `https://github.com/heniums/kanban` |
-| thumbnail | *(to be determined — use a screenshot or placeholder)* |
+| thumbnail | *(empty string with TODO comment)* |
 
-### FR-3: Add TOEIC Score to About Me
+### FR-3: Add TOEIC Score to Hero Badges
 
-Add a new info block to `aboutMeInfoBlocks` in `src/config.ts`:
+Add a new badge to `siteConfig.hero.badges` in `src/config.ts`:
 
 | Field | Value |
 |-------|-------|
 | key | `toeic` |
-| title | `TOEIC` |
-| content | `TOEIC Listening & Reading: 965/990` |
+| label | `TOEIC` |
+| value | `Listening & Reading: 965/990` |
+| icon | `language` |
 
 ---
 
@@ -55,11 +56,11 @@ Add a new info block to `aboutMeInfoBlocks` in `src/config.ts`:
 
 ## Acceptance Criteria
 
-- [ ] Realtime Chat App URL is updated to `https://chat-heniums.vercel.app`
-- [ ] Kanban project card appears in the Portfolio section with correct details
-- [ ] TOEIC score appears in the About Me section
-- [ ] `npm run lint` passes with zero warnings
-- [ ] `npm run build` succeeds
+- [x] Realtime Chat App URL is updated to `https://chat-heniums.vercel.app`
+- [x] Kanban project card appears in the Portfolio section with correct details
+- [x] TOEIC score appears in Hero badges
+- [x] `npm run lint` passes with zero warnings
+- [x] `npm run build` succeeds
 
 ## Out of Scope
 

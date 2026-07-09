@@ -7,9 +7,11 @@
 
 - [x] Task: Add Kanban project entry to `projectInfoList` in `src/config.ts`
     - [x] Add new object with key `kanban`, name `Kanban`, description, tags, url, sourceUrl
+    - [x] Add `thumbnail` field with empty string and `// TODO` comment
 
-- [x] Task: Add TOEIC info block to `aboutMeInfoBlocks` in `src/config.ts`
-    - [x] Add new object with key `toeic`, title `TOEIC`, content `TOEIC Listening & Reading: 965/990`
+- [x] Task: Add TOEIC score to Hero badges in `src/config.ts`
+    - [x] Add TOEIC badge to `siteConfig.hero.badges` array with label "TOEIC" and value "Listening & Reading: 965/990"
+    - [x] Note: TOEIC moved from About Me section to Hero badges for better visibility
 
 ## Phase 2: Verification
 
@@ -19,8 +21,7 @@
 - [x] Task: Run build check
     - [x] Execute `npm run build` and confirm successful compilation
 
-- [ ] Task: Conductor - User Manual Verification 'All Phases' (Protocol in workflow.md)
-    - [ ] Start dev server with `npm run dev`
-    - [ ] Verify Realtime Chat App card links to new URL
-    - [ ] Verify Kanban project card appears with correct details
-    - [ ] Verify TOEIC score appears in About Me section
+- [x] Task: Manual verification
+    - [x] Realtime Chat App card links to new URL
+    - [x] Kanban project card appears with correct details
+    - [x] TOEIC score appears in Hero badges
