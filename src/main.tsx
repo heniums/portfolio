@@ -25,10 +25,6 @@ const links: TopbarMenuLinkConfig[] = [
     label: "About",
     link: "#about",
   },
-  {
-    label: "Contact",
-    link: "#contact",
-  },
 ];
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
