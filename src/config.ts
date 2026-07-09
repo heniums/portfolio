@@ -25,7 +25,7 @@ export const siteConfig: SiteConfig = {
     greeting: "Hello, I'm",
     fullName: "Nguyen Van Hen",
     jobTitle: "Full-Stack Developer",
-    bio: "I build marketplace platforms and full-stack web applications. My edge is in React and Node.js — I'm the one writing the features, wiring up the payments, and figuring out why the Handlebars template isn't rendering. I also handle cloud deployments and DevOps when needed.",
+    bio: "Full-stack developer focused on modern, user-friendly applications. 2+ years building marketplace platforms, payment integrations, and cloud deployments. I love tweaking everything until it works and then tweaking it some more.",
     ctaPrimaryLabel: "Get in Touch",
     ctaSecondaryLabel: "GitHub",
     badges: [
@@ -87,7 +87,7 @@ export const siteConfig: SiteConfig = {
 // =============================================================================
 
 export const aboutMeNarrative =
-  "I'm a software engineer who thrives on building things that matter. With a background in software engineering and deep experience in marketplace platforms, I focus on writing clean, maintainable code that solves real problems. I'm passionate about React, TypeScript, and creating seamless user experiences. When I'm not coding, you'll find me exploring new technologies or contributing to open source.";
+  "Give me a problem that makes me think, and I'm hooked. I read the docs when I can, document my work so others don't have to guess, and always try to leave things better than I found them. At the end of the day, I just want to build stuff that makes life easier for the people using it.";
 
 export const experienceEntries: ExperienceEntry[] = [
   {
