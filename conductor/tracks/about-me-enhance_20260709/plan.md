@@ -6,10 +6,10 @@
     - [ ] Define type with `key: string`, `title: string`, `blocks: InfoBlock[]`
 
 - [x] Task: Restructure `aboutMeInfoBlocks` in `src/config.ts` (d1a0d09)
-    - [ ] Change from `InfoBlock[]` to `InfoBlockGroup[]`
-    - [ ] Create 3 groups: Background, How I Work, Personal
-    - [ ] Add new blocks: AI & Tools, Interests, Location
-    - [ ] Reassign existing blocks to appropriate groups
+    - [x] Change from `InfoBlock[]` to `InfoBlockGroup[]`
+    - [x] Create 2 groups: Background, Personal
+    - [x] Add new blocks: Interests, Location
+    - [x] Reassign existing blocks to appropriate groups
 
 - [x] Task: Update `Home.tsx` prop passing (e274bfe)
     - [ ] Change `<AboutMe infoBlocks={...}>` to `<AboutMe groups={...}>`
@@ -29,8 +29,8 @@
 - [x] Task: Run build check (07f6084)
     - [ ] Execute `npm run build` and confirm successful compilation
 
-- [ ] Task: Conductor - User Manual Verification 'All Phases' (Protocol in workflow.md)
+- [~] Task: Conductor - User Manual Verification 'All Phases' (Protocol in workflow.md)
     - [ ] Start dev server with `npm run dev`
-    - [ ] Verify 3 labeled groups: Background, How I Work, Personal
-    - [ ] Verify AI & Tools, Interests, Location blocks appear with correct content
-    - [ ] Verify existing blocks (Education, Skills, Personality, TOEIC) still render correctly
+    - [ ] Verify 2 labeled groups: Background, Personal
+    - [ ] Verify Interests, Location blocks appear with correct content
+    - [ ] Verify existing blocks (Education, Personality, TOEIC) still render correctly

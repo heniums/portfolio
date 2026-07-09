@@ -2,7 +2,7 @@
 
 ## Overview
 
-Enhance the About Me section with 3 new content blocks (AI & Tools, Interests, Location) and restructure the layout from a flat grid into 3 labeled groups with visual dividers.
+Enhance the About Me section with 2 new content blocks (Interests, Location) and restructure the layout from a flat grid into 2 labeled groups with visual dividers.
 
 ## Track Type
 
@@ -14,25 +14,16 @@ Feature (UI Enhancement + Content Update)
 
 ### FR-1: Restructure About Me Layout
 
-Replace the current flat grid of `InfoBlock` cards with a grouped layout. The section will have 3 labeled groups separated by visual dividers:
+Replace the current flat grid of `InfoBlock` cards with a grouped layout. The section will have 2 labeled groups separated by visual dividers:
 
 | Group          | Blocks                     |
 | -------------- | -------------------------- |
 | **Background** | Education, TOEIC           |
-| **How I Work** | Skills, AI & Tools         |
 | **Personal**   | Location, Interests, Personality |
 
 Each group has a heading label. Blocks within each group remain as cards but are visually organized under their group heading.
 
-### FR-2: Add AI & Tools Block
-
-| Field   | Value                                                                                           |
-| ------- | ----------------------------------------------------------------------------------------------- |
-| key     | `ai-tools`                                                                                        |
-| title   | `AI & Tools`                                                                                      |
-| content | `I incorporate AI tools into my daily workflow to speed up research, debugging, and boilerplate.` |
-
-### FR-3: Add Interests Block
+### FR-2: Add Interests Block
 
 | Field   | Value                                                       |
 | ------- | ----------------------------------------------------------- |
@@ -40,7 +31,7 @@ Each group has a heading label. Blocks within each group remain as cards but are
 | title   | `Interests`                                                   |
 | content | `Side projects, exploring new technologies, and open source.` |
 
-### FR-4: Add Location Block
+### FR-3: Add Location Block
 
 | Field   | Value                     |
 | ------- | ------------------------- |
@@ -60,8 +51,7 @@ Each group has a heading label. Blocks within each group remain as cards but are
 
 ## Acceptance Criteria
 
-- [ ] About Me section displays 3 labeled groups: Background, How I Work, Personal
-- [ ] AI & Tools block shows correct content
+- [ ] About Me section displays 2 labeled groups: Background, Personal
 - [ ] Interests block shows correct content
 - [ ] Location block shows correct content
 - [ ] Groups are visually separated with headings and dividers

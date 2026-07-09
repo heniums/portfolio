@@ -86,24 +86,6 @@ export const aboutMeInfoBlocks: InfoBlockGroup[] = [
     ],
   },
   {
-    key: "how-i-work",
-    title: "How I Work",
-    blocks: [
-      {
-        key: "skills",
-        title: "Skills",
-        content:
-          "Full-stack web development with React, Node.js, and TypeScript is where I live. I integrate payment gateways (Stripe, Airwallex, Wise), build email flows, and work deeply with Sharetribe marketplaces. Comfortable with AWS, Docker, Nginx, and CI/CD for deployments.",
-      },
-      {
-        key: "ai-tools",
-        title: "AI & Tools",
-        content:
-          "I incorporate AI tools into my daily workflow to speed up research, debugging, and boilerplate.",
-      },
-    ],
-  },
-  {
     key: "personal",
     title: "Personal",
     blocks: [
