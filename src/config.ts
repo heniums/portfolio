@@ -4,7 +4,6 @@ import type {
   TechCategoryData,
   ContactLink,
   SiteConfig,
-  HighlightItem,
 } from "src/types";
 
 // =============================================================================
@@ -90,24 +89,6 @@ export const siteConfig: SiteConfig = {
 export const aboutMeNarrative =
   "I enjoy solving problems that sit between product ideas and implementation. Whether it's designing a transaction workflow, integrating a payment provider, or deploying a marketplace to production, I like understanding how all the pieces fit together. I care about writing maintainable code, documenting my work, and building software that's reliable for both users and teammates.";
 
-export const highlightsData: HighlightItem[] = [
-  {
-    key: "experience",
-    label: "Experience",
-    value: "2+ Years",
-  },
-  {
-    key: "payments",
-    label: "Payment Systems",
-    value: "Stripe • Airwallex • Wise",
-  },
-  {
-    key: "cloud",
-    label: "Cloud & Infrastructure",
-    value: "AWS • Docker • CircleCI",
-  },
-];
-
 export const experienceEntries: ExperienceEntry[] = [
   {
     key: "itd-group",
@@ -165,49 +146,33 @@ export const projectInfoList: ProjectInfo[] = [
 
 export const techCategories: TechCategoryData[] = [
   {
-    key: "marketplace-platforms",
-    title: "Marketplace Platforms ⭐",
-    note: "Core expertise — capabilities built across multiple production platforms.",
-    items: [
-      "Marketplace customization",
-      { label: "Payment integrations", badges: ["Stripe", "Airwallex", "Wise"] },
-      "Booking & iCal",
-      "Transaction workflows",
-      "Internationalization",
-      "Email automation",
-    ],
-  },
-  {
     key: "frontend",
     title: "Frontend",
     note: "Building modern, user-friendly interfaces.",
-    items: ["React", "TypeScript", "Blazor", "WPF"],
+    items: ["Next.js", "React", "TypeScript", "Blazor", "WPF (C#)", "Tailwind CSS"],
+  },
+  {
+    key: "backend",
+    title: "Backend",
+    note: "APIs, real-time systems, and data layers.",
+    items: ["WebSocket", "Express", "PostgreSQL", "Drizzle ORM", "REST"],
   },
   {
     key: "cloud",
-    title: "Deployment & Cloud",
+    title: "Cloud & Deployment",
     note: "Deploying and managing production systems.",
-    items: [
-      {
-        label: "AWS",
-        badges: ["EC2", "Lambda", "S3"],
-      },
-      "Docker",
-      "Nginx",
-      "CircleCI",
-    ],
+    items: ["AWS", "Docker", "Nginx"],
   },
   {
-    key: "data",
-    title: "Data & Integration",
-    note: "Moving and transforming data between systems.",
+    key: "marketplace",
+    title: "Marketplace Related",
+    note: "Capabilities built across production marketplace platforms.",
     items: [
-      "PostgreSQL",
-      "DynamoDB",
-      "NoCoDB",
-      "SQL",
-      "REST APIs",
-      "Data migration",
+      "Sharetribe",
+      { label: "Payment systems", badges: ["Wise", "Airwallex", "Stripe"] },
+      "State machine",
+      "Email automation (SendGrid)",
+      "i18n",
     ],
   },
 ];

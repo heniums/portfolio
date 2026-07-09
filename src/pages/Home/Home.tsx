@@ -3,7 +3,6 @@ import {
   projectInfoList,
   experienceEntries,
   techCategories,
-  highlightsData,
 } from "src/config";
 
 import AnimatedSection from "src/components/AnimatedSection";
@@ -17,14 +16,14 @@ function Home() {
   return (
     <main>
       <Hero />
+      <AnimatedSection id="tech">
+        <TechStack categories={techCategories} />
+      </AnimatedSection>
       <AnimatedSection id="experience">
         <Experience entries={experienceEntries} />
       </AnimatedSection>
       <AnimatedSection id="projects">
         <Portfolio projectInfoList={projectInfoList} />
-      </AnimatedSection>
-      <AnimatedSection id="tech">
-        <TechStack categories={techCategories} highlights={highlightsData} />
       </AnimatedSection>
       <AnimatedSection id="about">
         <AboutMe narrative={aboutMeNarrative} />
