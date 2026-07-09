@@ -28,8 +28,8 @@
     - [x] Import LinkedIn icon and add LinkedIn CTA button to Hero.tsx
 - [x] Task: Remove Contact section from page layout `3d8cc93`
     - [x] Remove `<AnimatedSection id="contact">` from Home.tsx
-- [~] Task: Remove Contact link from navigation
-    - [ ] Remove Contact entry from `links` array in main.tsx
+- [x] Task: Remove Contact link from navigation `530664a`
+    - [x] Remove Contact entry from `links` array in main.tsx
 - [ ] Task: Conductor - User Manual Verification 'Hero Badges & About Me Simplification' (Protocol in workflow.md)
 
 ## Phase 3: Build & Quality Verification
