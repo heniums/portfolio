@@ -2,7 +2,7 @@
 
 ## Phase 1: Type & Data Structure
 
-- [ ] Task: Add `InfoBlockGroup` type to `src/types.ts`
+- [x] Task: Add `InfoBlockGroup` type to `src/types.ts` (bae903b)
     - [ ] Define type with `key: string`, `title: string`, `blocks: InfoBlock[]`
 
 - [ ] Task: Restructure `aboutMeInfoBlocks` in `src/config.ts`
