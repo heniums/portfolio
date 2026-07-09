@@ -19,7 +19,7 @@ function Home() {
     <main>
       <Hero />
       <AnimatedSection id="about">
-        <AboutMe infoBlocks={aboutMeInfoBlocks} />
+        <AboutMe groups={aboutMeInfoBlocks} />
       </AnimatedSection>
       <AnimatedSection id="experience">
         <Experience entries={experienceEntries} />
