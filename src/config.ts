@@ -128,7 +128,7 @@ export const experienceEntries: ExperienceEntry[] = [
     company: "Journeyhorizon",
     companyUrl: "https://journeyhorizon.com",
     role: "Software Engineer",
-    period: "Mar 2024 — Present",
+    period: "Mar 2024 — May 2026",
     description: [
       "Built and maintained 10+ Sharetribe-based marketplace platforms for international clients across AU, US, and EU regions.",
       "Integrated payment gateways including Stripe, Airwallex, and Wise for multi-currency transaction processing.",
