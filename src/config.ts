@@ -89,31 +89,9 @@ export const siteConfig: SiteConfig = {
 
 export const aboutMeInfoBlocks: InfoBlockGroup[] = [
   {
-    key: "background",
-    title: "Background",
-    blocks: [
-      {
-        key: "education",
-        title: "Education",
-        content:
-          "Bachelor of Software Engineering from the University of Information Technology, HCMC. Graduated with GPA 8.86/10.",
-      },
-      {
-        key: "toeic",
-        title: "TOEIC",
-        content: "TOEIC Listening & Reading: 965/990",
-      },
-    ],
-  },
-  {
     key: "personal",
     title: "Personal",
     blocks: [
-      {
-        key: "location",
-        title: "Location",
-        content: "Ho Chi Minh City, Vietnam",
-      },
       {
         key: "interests",
         title: "Interests",
