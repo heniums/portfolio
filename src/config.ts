@@ -24,8 +24,8 @@ export const siteConfig: SiteConfig = {
   hero: {
     greeting: "Hello, I'm",
     fullName: "Nguyen Van Hen",
-    jobTitle: "Software Engineer specializing in Marketplace Platforms",
-    bio: "I build and deploy marketplace platforms used by businesses across Europe, Australia, North America, and Asia. My work focuses on React, payment integrations, booking systems, internationalization, and AWS deployments.",
+    jobTitle: "Full-Stack Software Engineer building scalable web applications",
+    bio: "I build production web applications using React, TypeScript, Node.js, and AWS. I contributed to 10+ production web applications, implementing payment integrations, booking workflows, internationalization, cloud deployments, and other business-critical features for businesses across Europe, Australia, North America, and Asia.",
     ctaPrimaryLabel: "Get in Touch",
     ctaSecondaryLabel: "GitHub",
     badges: [
@@ -78,7 +78,7 @@ export const siteConfig: SiteConfig = {
   seo: {
     title: "Nguyen Van Hen — Full-Stack Developer",
     description:
-      "Full-stack developer specializing in React, TypeScript, Node.js, and Sharetribe marketplace platforms. Building real-world web applications with integrated payments and modern tooling.",
+      "Full-stack developer specializing in React, TypeScript, Node.js, and AWS. Building production web applications with payment integrations, cloud deployments, and modern tooling.",
   },
 };
 
@@ -87,7 +87,7 @@ export const siteConfig: SiteConfig = {
 // =============================================================================
 
 export const aboutMeNarrative =
-  "I enjoy solving problems that sit between product ideas and implementation. Whether it's designing a transaction workflow, integrating a payment provider, or deploying a marketplace to production, I like understanding how all the pieces fit together. I care about writing maintainable code, documenting my work, and building software that's reliable for both users and teammates.";
+  "I enjoy solving problems that sit between product ideas and implementation. Whether it's designing a transaction workflow, integrating a payment provider, or deploying production applications, I like understanding how all the pieces fit together. I care about writing maintainable code, documenting my work, and building software that's reliable for both users and teammates.";
 
 export const experienceEntries: ExperienceEntry[] = [
   {
@@ -109,10 +109,10 @@ export const experienceEntries: ExperienceEntry[] = [
     role: "Software Engineer",
     period: "Mar 2024 — May 2026",
     description: [
-      "Customized Sharetribe marketplaces to meet client-specific business requirements.",
-      "Built marketplace features including payment processing, booking, transaction workflows, and multilingual support.",
+      "Contributed to production web applications by implementing business workflows, booking systems, payment integrations, and multilingual support.",
+      "Implemented production features including payment processing, booking workflows, transaction management, and internationalization.",
       "Deployed production applications to AWS using EC2, Nginx, Docker, and CircleCI.",
-      "Integrated Stripe, Airwallex, Wise, and iCal into client platforms.",
+      "Integrated Stripe, Airwallex, Wise, and iCal into production applications.",
       "Migrated customer data from Airtable and legacy systems into NoCoDB and Sharetribe.",
       "Collaborated with designers, backend engineers, and clients throughout feature delivery.",
     ],
@@ -124,7 +124,7 @@ export const projectInfoList: ProjectInfo[] = [
     key: "realtime-chat-app",
     name: "Realtime Chat App",
     description:
-      "Hobby project demonstrating WebSocket real-time messaging with user authentication and presence indicators.",
+      "Real-time chat application built to explore WebSocket architecture, authentication, presence tracking, and scalable messaging.",
     tags: ["React", "Node.js", "WebSocket"],
     url: "https://chat.heniums.vercel.app",
     sourceUrl: "https://github.com/heniums/realtime-chat-app",
@@ -163,9 +163,9 @@ export const techCategories: TechCategoryData[] = [
     items: ["AWS", "Docker", "Nginx"],
   },
   {
-    key: "marketplace",
-    title: "Marketplace Related",
-    note: "Capabilities built across production marketplace platforms.",
+    key: "integrations",
+    title: "Integrations",
+    note: "Payment, communication, and localization integrations built for production applications.",
     items: [
       "Sharetribe",
       { label: "Payment systems", badges: ["Wise", "Airwallex", "Stripe"] },
