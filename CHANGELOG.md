@@ -11,6 +11,19 @@ Versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [1.5.0] — 2026-07-10
+
+### Changed
+
+- **Hero** — job title updated to "Full-Stack Software Engineer building scalable web applications"; bio rewritten to emphasize production applications and AWS over marketplace-specific language
+- **SEO description** — updated in both `index.html` and `src/config.ts` to reflect AWS and production application focus
+- **About Me narrative** — "deploying a marketplace to production" → "deploying production applications"
+- **Experience (Journeyhorizon)** — Software Engineer and Sharetribe role bullets rewritten for clarity and impact
+- **Tech categories** — "Marketplace Related" category renamed to "Integrations" with updated note
+- **Portfolio (Realtime Chat App)** — description improved to highlight WebSocket architecture and scalability
+
+---
+
 ## [1.4.0] — 2026-07-09
 
 ### Added
@@ -120,7 +133,8 @@ Versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - GitHub and LinkedIn icon components
 - `src/config.ts` as single source of truth for all editable content
 
-[Unreleased]: https://github.com/heniums/portfolio/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/heniums/portfolio/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/heniums/portfolio/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/heniums/portfolio/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/heniums/portfolio/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/heniums/portfolio/compare/v0.2.0...v1.3.0
