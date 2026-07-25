@@ -128,7 +128,7 @@ export const projectInfoList: ProjectInfo[] = [
     tags: ["React", "TypeScript", "Express", "PostgreSQL", "Drizzle ORM", "Tailwind CSS"],
     url: "https://budgeto.vercel.app",
     sourceUrl: "https://github.com/heniums/budgeto",
-    thumbnail: "https://i.ibb.co/budgeto-thumbnail.png",
+    thumbnail: "https://i.ibb.co/QFgN0Hs3/budgeto-screenshot.png",
   },
   {
     key: "realtime-chat-app",
