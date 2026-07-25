@@ -11,6 +11,14 @@ Versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [1.6.0] — 2026-07-26
+
+### Added
+
+- **Budgeto project** — new portfolio entry: personal finance & budgeting PWA with multi-wallet tracking, categorized transactions, budget management with per-category limits, wallet-to-wallet transfers, and balance adjustments with audit trails (React, TypeScript, Express, PostgreSQL, Drizzle ORM, Tailwind CSS)
+
+---
+
 ## [1.5.0] — 2026-07-10
 
 ### Changed
@@ -133,7 +141,8 @@ Versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - GitHub and LinkedIn icon components
 - `src/config.ts` as single source of truth for all editable content
 
-[Unreleased]: https://github.com/heniums/portfolio/compare/v1.5.0...HEAD
+[Unreleased]: https://github.com/heniums/portfolio/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/heniums/portfolio/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/heniums/portfolio/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/heniums/portfolio/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/heniums/portfolio/compare/v1.3.0...v1.3.1
