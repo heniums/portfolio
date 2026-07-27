@@ -126,7 +126,7 @@ export const projectInfoList: ProjectInfo[] = [
     description:
       "Personal finance & budgeting PWA with multi-wallet tracking, categorized transactions, budget management with per-category limits, wallet-to-wallet transfers, and balance adjustments with audit trails.",
     tags: ["React", "TypeScript", "Express", "PostgreSQL", "Drizzle ORM", "Tailwind CSS"],
-    url: "https://budgeto.vercel.app",
+    url: "https://budgeto.heniums.vercel.app",
     sourceUrl: "https://github.com/heniums/budgeto",
     thumbnail: "https://i.ibb.co/QFgN0Hs3/budgeto-screenshot.png",
   },
